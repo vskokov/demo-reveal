@@ -68,8 +68,6 @@ North Carolina state University
 ### Sample columns 2
 
 
-<div class="container">
-
 <div class="half-part" data-markdown>
     
 - a
@@ -82,7 +80,7 @@ North Carolina state University
     
 ![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)
 </div>
-</div>
+
 
 
 
