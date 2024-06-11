@@ -54,11 +54,9 @@ North Carolina state University
 </div>
 
 <div class="col" data-markdown>
-    
-- d
-- f
-- g
-  
+
+![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)
+
 </div>
 </div>
 
@@ -79,6 +77,7 @@ North Carolina state University
 <div class="half-part" data-markdown>
     
 ![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)
+
 </div>
 
 
