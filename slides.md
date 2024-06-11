@@ -80,8 +80,7 @@ North Carolina state University
 
 <div class="half-part" data-markdown>
     
-![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)<!-- .element: class="r-fit-text" -->
-  
+![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)
 </div>
 </div>
 
