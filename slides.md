@@ -37,3 +37,17 @@ North Carolina state University
 ### Sample figure
 
 ![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)<!-- .element: class="r-fit-text" -->
+
+---
+
+### Sample columns 
+
+<span>
+Text going to the right and a lot of it 
+
+- a
+- aa
+- b    
+</span><!-- .element: style="float: right; width: 40%" -->
+
+Text going on the left column <!-- .element: style="width: 40%" -->
