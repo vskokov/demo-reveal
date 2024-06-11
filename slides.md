@@ -40,14 +40,27 @@ North Carolina state University
 
 ---
 
-### Sample columns 
+### Sample columns <style>
 
-<span>
-Text going to the right and a lot of it 
 
-- a
-- aa
-- b    
-</span><!-- .element: style="float: right; width: 40%" -->
+<div class="container">
 
-Text going on the left column <!-- .element: style="width: 40%" -->
+<div class="col" data-markdown>
+
+-a
+-b 
+-c 
+
+</div>
+
+<div class="col" data-markdown>
+
+-d
+-f
+-g
+
+</div>
+
+</div>
+
+
