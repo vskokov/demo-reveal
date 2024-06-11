@@ -63,3 +63,27 @@ North Carolina state University
 </div>
 
 
+---
+
+### Sample columns 2
+
+
+<div class="container">
+
+<div class="half-part" data-markdown>
+    
+- a
+- b 
+- c
+    
+</div>
+
+<div class="half-part" data-markdown>
+    
+![z](https://inspirehep.net/files/66674c85c2204835d6588978249abf9d)<!-- .element: class="r-fit-text" -->
+  
+</div>
+</div>
+
+
+
