@@ -46,21 +46,16 @@ North Carolina state University
 <div class="container">
 
 <div class="col" data-markdown>
-
--a
--b 
--c 
-
+- a
+- b 
+- c 
 </div>
 
 <div class="col" data-markdown>
-
--d
--f
--g
-
+- d
+- f
+- g
 </div>
-
 </div>
 
 
