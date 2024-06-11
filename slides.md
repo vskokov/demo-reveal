@@ -40,7 +40,7 @@ North Carolina state University
 
 ---
 
-### Sample columns <style>
+### Sample columns 
 
 
 <div class="container">
