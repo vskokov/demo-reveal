@@ -24,78 +24,70 @@
 // headers //
 // don't show on first slide
 .titleslide .header-left {
-    display: none;
+  display: none;
 }
 // for name of presentation
 .reveal .header-left,
 // for author and name
 .reveal .header-right {
-    font-size: 15px;
-    line-height: 15px;
+  font-size: 15px;
+  line-height: 15px;
 
-    position: absolute;
-    z-index: 100;
+  position: absolute;
+  z-index: 100;
 }
 .reveal .header-right em,
 .reveal .header-left em {
-    font-size: 15px;
+  font-size: 15px;
 }
 .reveal .header-left {
-    left: 2em;
-    top: 1em;
-    margin-left: -2vw;
-    margin-top: -2vh;
+  left: 2em;
+  top: 1em;
+  margin-left: -2vw;
+  margin-top: -2vh;
 }
 .reveal .header-right {
-    right: 2em;
-    top: 1em;
-    margin-right: -2vw;
-    margin-top: -2vh;
+  right: 2em;
+  top: 1em;
+  margin-right: -2vw;
+  margin-top: -2vh;
 }
 .reveal .header-left sup,
 .reveal .header-right sup {
-    vertical-align: super;
-    font-size: 14.1447px;
-    line-height: 14.1667px;
+  vertical-align: super;
+  font-size: 14.1447px;
+  line-height: 14.1667px;
 }
 // on dark background image
 .dark-background .header-right, .dark-background .header-left {
-    color: white;
-    background-color: rgba(0,0,0,0.5);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-
-// fragments //
-// fragments that just faded out and ought to be removed
-.reveal .fragment.fragment-remove.fade-out.visible,
-.reveal .fragment.fragment-remove.fade-in-then-out.visible:not(.current-fragment),
-// fragments that haven't faded in yet
-.reveal .fragment.fragment-remove:not(.visible):not(.fade-out) {
-    display: none;
-    height: 0px;
-    line-height: 0px;
-    font-size: 0px;
-}
-
 
 // partitioning //
 .half-part {
-    width: 50%;
-    float: left;
+  width: 50%;
+  float: left;
 }
 .clear-float {
-    clear: both;
+  clear: both;
 }
 .clearfix {
-    overflow: auto;
+  overflow: auto;
 }
 
 // heading on left or right side //
 .heading-left {
-    width: 65%;
-    float: left;
+  width: 65%;
+  float: left;
 }
 .heading-right {
-    width: 50%;
-    float: right;
+  width: 50%;
+  float: right;
+}
+
+.special-header {
+  position: absolute;
+  top: -10%;
+  /*background-color: rgba(0,0,0,0.5)*/
 }

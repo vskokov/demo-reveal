@@ -9,28 +9,39 @@
 
     <title>reveal.js</title>
 
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
     <link rel="stylesheet" href="dist/theme/moon.css" />
-    
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
   </head>
 
-<style>
-.container{
-    display: flex;
-    align-items: center;
-}
-.col{
-    flex: 1;
-    align-items: center;
-}
-</style>
+  <style>
+      .container {
+        display: flex;
+        align-items: center;
+      }
+      .col {
+        flex: 1;
+        align-items: center;
+      }
+    }
 
-  
+      .fragment.visible:not(.current-fragment) {
+        display: none;
+        height: 0px;
+        line-height: 0px;
+        font-size: 0px;
+      }
+
+      div.vspace1em {
+        clear: both;
+        height: 1em;
+      }
+  </style>
+
   <body>
     <div class="reveal">
       <div class="slides">
@@ -41,8 +52,6 @@
         ></section>
       </div>
     </div>
-   
-
 
     <script src="dist/reveal.js"></script>
     <script src="plugin/math/math.js"></script>
