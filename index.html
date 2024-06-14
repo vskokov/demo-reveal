@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="dist/reset.css" />
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/moon.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" />
     <link rel="stylesheet" href="style.css" />
 
     <!-- Theme used for syntax highlighted code -->
@@ -27,14 +27,6 @@
       flex: 1;
       align-items: center;
     }
-
-    .fragment.visible:not(.current-fragment) {
-      display: none;
-      height: 0px;
-      line-height: 0px;
-      font-size: 0px;
-    }
-
     div.vspace1em {
       clear: both;
       height: 1em;
@@ -51,6 +43,15 @@
     }
     .reveal ol {
       display: block;
+    }
+
+    .cite {
+      text-align: right;
+      font-size: 40%;
+    }
+
+    .smallmath {
+      font-size: 60%;
     }
   </style>
 
@@ -82,7 +83,7 @@
           RevealMarkdown,
           RevealHighlight,
           RevealNotes,
-          RevealMath.MathJax2,
+          RevealMath.MathJax3,
         ],
       });
     </script>
