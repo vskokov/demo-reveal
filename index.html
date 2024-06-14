@@ -78,6 +78,14 @@
       Reveal.initialize({
         hash: true,
 
+        mathjax3: {
+          tex: {
+            macros: {
+              red: ["{\\color{red}{#1}}", 1],
+            },
+          },
+        },
+
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [
           RevealMarkdown,

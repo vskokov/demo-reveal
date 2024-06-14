@@ -384,7 +384,21 @@ C. Schmidt, CPOD 2024
 ### Is it useful for QCD?
 
 - Properties of YLE, e.g. $\sigma_{\rm YLE}$ can be use to validate indirect
-  methods of locating YLE in QCD (volume scaling of the density of zeros)
+  methods of locating YLE in QCD (e.g. through volume scaling of the density of
+  zeros)
+
+- Moreover,
+
+  - YLE defines the behavior of the higher order Taylor expansion coefficients
+    (Darboux's theorem). E.g. for of $f_G(z)$:
+
+    $$
+    f_G^{(n)} \sim 2 B_0 {\red{|z_c|}}^{-n} \frac{n^{ \red \sigma -1 }}{\Gamma(\red \sigma  )}  \cos \left(\beta_0 - {\red{\frac{\pi n}{2\Delta}}  } \right),
+    \quad B_0 \exp (i \beta_0) = \lim\limits_{z\to z_c}  \frac{ f_G(z)-f_G(z_c)}
+    {(1-z/z_c)^{\sigma} }
+    $$
+
+  - Fourier coefficients are exponentially sensetive to YLE
 
 - $|z^{Z(2)}_c|$ was used by lattice QCD to establish scaling parameter near
   Roberge-Weiss critical point
