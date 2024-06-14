@@ -112,7 +112,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 </div>
 
 - Scaling form of "magnetic equation of state"
-  $$f_G (\color{red}{z}  + f_G^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } } \quad\text{with} \quad  \beta = 1/2, \delta=3$$
+  $$f_G ( {\color{red}{z}}  + f_G^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } } \quad\text{with} \quad  \beta = 1/2, \delta=3$$
 
 --
 
@@ -365,17 +365,13 @@ expansion coefficients of $\ln Z$ at zero $\mu$
 <div class="r-stack">
 
 <div class="fragment fade-out"  data-fragment-index="1"  >
-
 <img src="img/BasarYLE.png" height=350em >
 <img src="img/LatticeYLElocation.png" height=350em >
-
 <div class="cite">
 G. Basar, 2312.06952 <br>
 D. Clarke et. al., 2405.10196
 </div>
-
 </div>
-
 <img class="fragment current-visible" data-fragment-index="1" src="img/LatticeQCDPD.png" height=350em >
 <div class="cite">
 C. Schmidt, CPOD 2024
@@ -391,7 +387,11 @@ C. Schmidt, CPOD 2024
   methods of locating YLE in QCD (volume scaling of the density of zeros)
 
 - $|z^{Z(2)}_c|$ was used by lattice QCD to establish scaling parameter near
-  Rogerge-Weiss critical point
+  Roberge-Weiss critical point
+
+<div class="cite">
+K. Zambello et. al., 2301.03952
+</div>
 
 - Generically $|z_c|$ is useful only if the non-universal mapping parameters are
   known
