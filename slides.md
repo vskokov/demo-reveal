@@ -168,6 +168,19 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
  <p class="fragment fade-in" data-fragment-index="2"> 1 independent crit. exp., c.f.  standard critical point with 2 independent crit. exp. </p>
 
+--
+
+### Illustration in Ising model
+
+<img src="img/IsingYLE.png"  width=550em>
+
+<div class="cite">
+F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
+</div>
+
+- In contrast to the critical point, YLE form lines
+- YLE are continuously connected to critical point
+
 ---
 
 ### Universal location of YLE
@@ -379,13 +392,12 @@ C. Schmidt, CPOD 2024
 
 </div>
 
----
+--
 
 ### Is it useful for QCD?
 
 - Properties of YLE, e.g. $\sigma_{\rm YLE}$ can be use to validate indirect
-  methods of locating YLE in QCD (e.g. through volume scaling of the density of
-  zeros)
+  methods of locating YLE in QCD, e.g. volume scaling of the density of zeros
 
 - Moreover,
 
@@ -400,6 +412,27 @@ C. Schmidt, CPOD 2024
 
   - Fourier coefficients are exponentially sensetive to YLE
 
+    $$
+    b_{k\gg1} \approx \|\tilde A_{\rm YLE}\| \frac{e^{-\hat \mu_r^{\rm YLE} k }}{k^{1+\sigma}} \cos(\hat \mu_i^{\rm YLE} k + \phi^{\rm YLE}_a)
+    $$
+
+    $$
+     +\|\hat A_{\rm RW}\|  (-1)^k \frac{e^{-\hat \mu_r^{\rm RW} k }}{k^{1+\sigma}}
+    $$
+
+--
+
+### Fourier coefficients
+
+<img src="img/CoffFRG150.png" height=350em >
+
+- Assymptotic expression captures behaviour of coefficients at rather small $k$
+- Assymptotic formula as a fit function $\leadsto$ location of YLE
+
+--
+
+### Is it useful for QCD?
+
 - $|z^{Z(2)}_c|$ was used by lattice QCD to establish scaling parameter near
   Roberge-Weiss critical point
 
@@ -409,3 +442,13 @@ K. Zambello et. al., 2301.03952
 
 - Generically $|z_c|$ is useful only if the non-universal mapping parameters are
   known
+
+<img src="img/ChiralScaling.png" height=300em >
+
+$\quad \frac{\Delta T}{T^0} =
+\frac{{\rm Re} z_c}{z_0} \left( \frac{m_l}{m_s^{phys}}\right)^{\frac{1}{\beta
+\delta}} $
+
+<div class="cite">
+S. Mukherjee and V.S., 1909.04639
+</div>
