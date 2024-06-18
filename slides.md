@@ -195,11 +195,14 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
     <div class="cite"> M. Fisher, “Yang-Lee Edge Singularity and φ3 Field Theory”, Phys. Rev. Lett. 40 1610 (1978) </div>
     <div class="smallmath">
     Only leading order under perturbative control
+
     $$
     |z_c| \approx  |z_c^{\rm MF}| \left[1 +  \frac{ 27 \ln \left(\frac{3}{2}\right) -  (N-1)  \ln 2}{9
     (N+8)}\epsilon \right] + \epsilon^2 \log \epsilon \times  ( \cdots ) .
     $$
+
     </div>
+
   - lattice: direct calculations at complex values of parameters are impossible
     due to sign problem; indirectly lattice can provide information about YLE
     location through calculations at real values of thermodynamic parameters
@@ -445,9 +448,8 @@ K. Zambello et. al., 2301.03952
 
 <img src="img/ChiralScaling.png" height=300em >
 
-$\quad \frac{\Delta T}{T^0} =
-\frac{{\rm Re} z_c}{z_0} \left( \frac{m_l}{m_s^{phys}}\right)^{\frac{1}{\beta
-\delta}} $
+$\quad \frac{\Delta T}{T^0} = \frac{{\rm Re} z_c}{z_0} \left(
+\frac{m_l}{m_s^{phys}}\right)^{\frac{1}{\beta \delta}} $
 
 <div class="cite">
 S. Mukherjee and V.S., 1909.04639
