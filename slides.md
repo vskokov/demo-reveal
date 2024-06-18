@@ -458,3 +458,19 @@ S. Mukherjee and V.S., 1909.04639
 ---
 
 ### Conclusions
+
+- Universal location of YLE was one of the undertermined universal quantities as
+  of recent
+  - FRG allowed us to find the universal location of YLE for $d>2.7$ and
+    arbitrary $N$
+  - Xu and Zamolodchikov determined location of YLE in Ising Field Theory, $d=2$
+    and $N=1$
+- To map universal location to QCD, one requires non-universal metric factors.
+  They are generically are not known.
+- Nevertheless properties of YLE singularities might be useful in establishing
+  existance/location of QCD crtitical point
+  - YLE is continuosly connected to critical point
+  - Critical exponent $\sigma$ at YLE is universal and independent of $N$; it
+    predicts the behaviour of Lee-Yang zeroes and their scaling with volume
+  - Associated analityc structure of complex $\mu$-plane constraints the
+    behaviour of Fourier coefficients
