@@ -448,7 +448,7 @@ K. Zambello et. al., 2301.03952
 
 <img src="img/ChiralScaling.png" height=300em >
 
-$\quad \frac{\Delta T}{T^0} = \frac{{\rm Re} z_c}{z_0} \left(
+$\quad \frac{\Delta T}{T^0} = \frac{ { \rm Re } z_c}{z_0} \left(
 \frac{m_l}{m_s^{phys}}\right)^{\frac{1}{\beta \delta}} $
 
 <div class="cite">
