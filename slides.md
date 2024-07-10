@@ -206,7 +206,7 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
   - lattice: direct calculations at complex values of parameters are impossible
     due to sign problem; indirectly lattice can provide information about YLE
     location through calculations at real values of thermodynamic parameters
-    <div class="cite"> Schmidt, Karsch </div>
+    <div class="cite">  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
 
 - Functional Renormalization group provides most precise $|z_c|$ in $d=3$
 
