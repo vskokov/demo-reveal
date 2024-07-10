@@ -164,7 +164,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 | Type of critical point:       | <p class="fragment fade-in" data-fragment-index="2"> protocritical = YLE </p> | critical | tricritical |
 | ----------------------------- | ----------------------------------------------------------------------------- | -------- | ----------- |
-| Number of relevant variables: | <p class="fragment fade-in" data-fragment-index="1"> 1 </p> .                 | 2        | 4           |
+| Number of relevant variables: | <p class="fragment fade-in" data-fragment-index="1"> 1 </p> &nbsp;            | 2        | 4           |
 
  <p class="fragment fade-in" data-fragment-index="2"> 1 independent crit. exp., c.f.  standard critical point with 2 independent crit. exp. </p>
 
