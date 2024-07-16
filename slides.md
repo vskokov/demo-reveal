@@ -185,7 +185,7 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 
 ### Universal location of YLE
 
-- The phase of $z_c = |z_c| e^{\pm \frac{i \pi}{\beta \delta}}$ is defined by
+- The phase of $z_c = |z_c| e^{\pm \frac{i \pi}{2 \beta \delta}}$ is defined by
   the critical exponents of the underlying universality class. How to find
   $|z_c|$?
 - Ordinary, we rely on two methods: $\varepsilon$-expansion and lattice
