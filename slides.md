@@ -118,12 +118,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 ### Yang-Lee edge singularity
 
-<div class="r-stack">
-
-<img class="fragment fade-out" data-fragment-index="0"   src="img/fg.png" >
-<img class="fragment fade-in"  data-fragment-index="0"  src="img/fg3d.png">
-
-</div>
+<img src="img/fg3d.png">
 
 --
 
