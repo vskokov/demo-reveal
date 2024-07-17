@@ -34,7 +34,7 @@ North Carolina state University
 - Consider an arbitrary function expanded around a regular point
   $$f(x) = \sum_{n=0}^{\infty} \frac{1}{n!}  f_n x^{n}$$
 - What limits the predictive power of this expansion?
-
+e.g.  $1/(exp(x)+1)$. 
 <div class="r-stack">
 
 <img class="fragment fade-in-then-out" data-fragment-index="0" src="img/expans.png" width="40%" />
