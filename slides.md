@@ -34,7 +34,8 @@ North Carolina state University
 - Consider an arbitrary function expanded around a regular point
   $$f(x) = \sum_{n=0}^{\infty} \frac{1}{n!}  f_n x^{n}$$
 - What limits the predictive power of this expansion?
-e.g.  $1/(exp(x)+1)$. 
+e.g.  $f(x) = 1/(e^x+1)$ .
+
 <div class="r-stack">
 
 <img class="fragment fade-in-then-out" data-fragment-index="0" src="img/expans.png" width="40%" />
@@ -62,7 +63,7 @@ $$|x| < R_c \equiv \left(  \lim_n \sup \left| f_n^{1/n} \right| \right)^{-1}$$
 
 `\[ F = \int d^{d} x \left(  \frac{1}{2} t \phi^2 + \frac{1}{4}  \lambda \phi^4 - h \phi   \right) \]`
 
-Parameters can be:
+E.g.: 
 
 - near chiral limit: $t \propto T-T_c + \kappa \mu^2$, $h\propto m_{u,d}$
 - near CP: $t,h \propto \alpha_{t,h}(T-T_c) + \beta_{t,h} (\mu-\mu_c)$
@@ -94,8 +95,8 @@ Parameters can be:
 
 Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
 
-- Arbirary $t$ and $h$: $t \phi + \lambda \phi^3 = h$
-- Simplify $\lambda\to1$: $t \phi + \phi^3 = h$
+- Arbitrary $t$ and $h$: $t \phi + \lambda \phi^3 = h$
+- To simplify math $\lambda\to1$: $t \phi + \phi^3 = h$
 - Ansatz for the solution $\phi = h^{1/3} f_G$
 
 $t h^{1/3} f_G  + h f_G^3 = h$ or
@@ -142,9 +143,6 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
   underlying universality class
 
 - From conformal bootrstrap, $\color{red}{\sigma^{d=3}_{\rm YLE}} = 0.085(1)$
-
-- In a finite volume, $\sigma_{\rm YLE}$ describes scaling of the density of the
-  Lee-Yang zeros
 
 - Mean-field approximation gets it wrong:
   ${\sigma^{\rm MF}_{\rm YLE}} = \frac12$
@@ -200,7 +198,6 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 
   - lattice: direct calculations at complex values of parameters are impossible
     due to sign problem; indirectly lattice can provide information about YLE
-    location through calculations at real values of thermodynamic parameters
     <div class="cite">  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
 
 - Functional Renormalization group provides most precise $|z_c|$ in $d=3$
@@ -226,7 +223,7 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 **Pros:** Exact, non-perturbative, no sign problem. **Cons**: requires
 truncation.
 
----
+--
 
 ### Truncation: derivative expansion
 
@@ -258,7 +255,7 @@ truncation.
        \end{aligned}
   $$
 
----
+--
 
 ### Truncation: derivative expansion
 
@@ -287,7 +284,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 116013
 </div>
 
----
+--
 
 ### Truncation: series expansion
 
