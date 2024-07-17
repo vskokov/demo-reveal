@@ -6,6 +6,23 @@ Vladi Skokov
 
 North Carolina state University
 
+
+
+
+
+---
+
+## Outline
+
+- Introduction: why analytic structure? and what is Yang-Lee edge singularity? 
+
+- Universal location of YLE for  most relevant universality classes 
+
+- Tracing YLE in QCD
+
+- Conclusions 
+
+
 ---
 
 ### QCD Phase diagram
@@ -121,16 +138,6 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 <img src="img/fg3d.png">
 
---
-
-### Yang-Lee edge singularity
-
-- To locate YLE: $$\frac{\partial^2 F}{\partial \phi^2} = 0  $$
-- Equivalently:
-  $$\frac{\partial  z}{\partial f_G} = 0  \leadsto z + 3 f_G^2 =0  $$
-- Together with $f_G(z+f_G^2) = 1$ this defines the position $z_c$
-
-</div>
 
 --
 
@@ -163,7 +170,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 --
 
-### Illustration in Ising model
+### Illustration in Ising model: $h = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
 
 <img src="img/IsingYLE.png"  width=550em>
 
@@ -308,7 +315,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 
   - Months on an HPC
 
----
+--
 
 ### Results: importance of fluctuations ($N$=1)
 
@@ -361,14 +368,64 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 ---
 
-### Is it useful for QCD?
 
-- Tracing YLE singularity was shown to be useful
+### Analytic structure in QCD: $T_c<T<T_{RW}$
 
-<div class="smallmath">
-Indirect methods to locate YLE was used: input from Im $\mu$ or Taylor series
-expansion coefficients of $\ln Z$ at zero $\mu$
+
+<img src="img/YLEs.png" height=500em >
+
+
+
+--
+
+
+### Analytic structure in QCD: $T\to T_c$
+
+
+<img src="img/YLEtoTc.png" height=500em >
+
+
+
+
+--
+
+
+### Analytic structure in QCD: $T\to T_{RW}$
+
+
+<img src="img/YLEtoRW.png" height=500em >
+
+
+
+
+
+
+---
+### Tracing YLE singularity: RW critical point 
+
+
+Lattice QCD and indirect methods to locate YLE: 
+
+input from  Im $\mu$  \& analytic continuation 
+
+
+<img src="img/RW_YLE.png" height=350em >
+
+$$
+  z = z_c \to \text{Re} \mu_{YLE} \propto (T_{RW}-T)^{\beta \delta} \quad \leadsto T_{RW} = 211.1 \pm 3.1 \text{MeV}.
+$$
+
+<div class="cite">
+Christian Schmidt, et. al., 2401.07790
 </div>
+
+
+
+---
+### Tracing YLE singularity: chiral critical point  
+
+
+Lattice input from Taylor series coeff. at $\mu=0$ or  Im $\mu$  \&  analytic continuation 
 
 <div class="r-stack">
 
@@ -381,15 +438,21 @@ D. Clarke et. al., 2405.10196
 </div>
 </div>
 <img class="fragment current-visible" data-fragment-index="1" src="img/LatticeQCDPD.png" height=350em >
-<div class="cite">
-C. Schmidt, CPOD 2024
 </div>
 
+
+
+<div class=smallmath>
+$$ z=z_c \to \text{Re} (\mu-\mu_c) = c_1 (T-T_c) + c_2 (T-T_c)^2  \text{ and }  \text{Im} \mu = c_3 (T-T_c)^{\beta\delta}
+$$
+$$
+\leadsto 
+T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$ 
 </div>
 
 --
 
-### Is it useful for QCD?
+### Taking it further 
 
 - Properties of YLE, e.g. $\sigma_{\rm YLE}$ can be use to validate indirect
   methods of locating YLE in QCD, e.g. volume scaling of the density of zeros
@@ -399,11 +462,13 @@ C. Schmidt, CPOD 2024
   - YLE defines the behavior of the higher order Taylor expansion coefficients
     (Darboux's theorem). E.g. for of $f_G(z)$:
 
+    <div class="smallmath">
     $$
-    f_G^{(n)} \sim 2 B_0 {\red{|z_c|}}^{-n} \frac{n^{ \red \sigma -1 }}{\Gamma(\red \sigma  )}  \cos \left(\beta_0 - {\red{\frac{\pi n}{2\Delta}}  } \right),
+    f_G^{(n)} \sim 2 B_0 {\red{|z_c|}}^{-n} \frac{n^{ \red \sigma -1 }}{\Gamma(\red \sigma  )}  \cos \left(\beta_0 - {\red{\frac{\pi n}{2\beta \delta}}  } \right),
     \quad B_0 \exp (i \beta_0) = \lim\limits_{z\to z_c}  \frac{ f_G(z)-f_G(z_c)}
     {(1-z/z_c)^{\sigma} }
     $$
+</div>
 
   - Fourier coefficients are exponentially sensetive to YLE
 
@@ -411,48 +476,28 @@ C. Schmidt, CPOD 2024
     b_{k\gg1} \approx \|\tilde A_{\rm YLE}\| \frac{e^{-\hat \mu_r^{\rm YLE} k }}{k^{1+\sigma}} \cos(\hat \mu_i^{\rm YLE} k + \phi^{\rm YLE}_a)
     $$
 
-    $$
+$$
      +\|\hat A_{\rm RW}\|  (-1)^k \frac{e^{-\hat \mu_r^{\rm RW} k }}{k^{1+\sigma}}
     $$
-
+<div class="cite">
+ M. Bryant, C. Schmidt, V. S., 2401.06489 
+</div>
 --
 
 ### Fourier coefficients
 
-<img src="img/CoffFRG150.png" height=350em >
-
-- Assymptotic expression captures behaviour of coefficients at rather small $k$
-- Assymptotic formula as a fit function $\leadsto$ location of YLE
-
---
-
-### Is it useful for QCD?
-
-- $|z^{Z(2)}_c|$ was used by lattice QCD to establish scaling parameter near
-  Roberge-Weiss critical point
+<img src="img/FTfits.png" height=350em >
 
 <div class="cite">
-K. Zambello et. al., 2301.03952
+ M. Bryant, C. Schmidt, V. S., 2401.06489 
 </div>
 
-- Generically $|z_c|$ is useful only if the non-universal mapping parameters are
-  known
-
-<img src="img/ChiralScaling.png" height=300em >
-
-$\quad \frac{\Delta T}{T^0} = \frac{ { \rm Re } z_c}{z_0} \left(
-\frac{m_l}{m_s^{phys}}\right)^{\frac{1}{\beta \delta}} $
-
-<div class="cite">
-S. Mukherjee and V.S., 1909.04639
-</div>
 
 ---
 
 ### Conclusions
 
-- Universal location of YLE was one of the undertermined universal quantities as
-  of recent
+- Universal location of YLE was one of not many unknown universal quantities
   - FRG allowed us to find the universal location of YLE for $d>2.7$ and
     arbitrary $N$
   - Xu and Zamolodchikov determined location of YLE in Ising Field Theory, $d=2$
@@ -460,9 +505,10 @@ S. Mukherjee and V.S., 1909.04639
 - To map universal location to QCD, one requires non-universal metric factors.
   They are generically are not known.
 - Nevertheless properties of YLE singularities might be useful in establishing
-  existance/location of QCD crtitical point
-  - YLE is continuosly connected to critical point
+  existence/location of QCD critical point
+  - YLE is continuously connected to critical point; 
+  - Two distinct approaches based on lattice input from Taylor coefficients and imaginary $\mu$ $\leadsto$ approximately the same $T_c$ 
   - Critical exponent $\sigma$ at YLE is universal and independent of $N$; it
     predicts the behaviour of Lee-Yang zeroes and their scaling with volume
-  - Associated analityc structure of complex $\mu$-plane constraints the
+  - Associated analytic structure of complex $\mu$-plane constraints the
     behaviour of Fourier coefficients
