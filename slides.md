@@ -24,57 +24,41 @@ North Carolina State University
 
 - Conclusions 
 
-
 ---
+### Tracing singularity: chiral critical point  
 
-### QCD Phase diagram
 
-<img src="img/phase.png" width="50%">
-
-- Experiment with relativistic heavy ions: the system is small and has a short
-  lifetime
-- Theory: although the underlying theory (QCD) is known, we cannot solve it
-  &cross;
-- Numerical methods: zero density region only due to the ``sign'' problem
-  &cross;
-- Indirect methods: Taylor series coefficients/imaginary $\mu$ $\to$ non-zero
-  baryon density &check;
-
-<span style="font-size:0.8em;">
-
-`\[  p/T^4 = \sum_{n=0}^{\infty} \frac{  \chi_n }{n!}\left(\frac{\mu}{T}\right)^n;  \quad  \chi_n = \frac{ \partial^n(p/T^4)} { \partial\ (\mu/T)^n}  \quad     {\color{gray}  \chi_2 =  \frac{ \langle (\delta N)^2 \rangle   }{VT^3}     \quad   \chi_4 = \frac{ \langle (\delta N)^4 \rangle  -  3 \langle (\delta N)^2 \rangle^2  }{VT^3}}  \]`
-
-</span>
-
----
-
-### Taylor series expansion
-
-- Consider an arbitrary function expanded around a regular point
-  $$f(x) = \sum_{n=0}^{\infty} \frac{1}{n!}  f_n x^{n}$$
-- What limits the predictive power of this expansion?
-e.g.  $f(x) = 1/(e^x+1)$ .
+Lattice input from Taylor series coeff. at $\mu=0$ or  Im $\mu$  \&  analytic continuation 
 
 <div class="r-stack">
 
-<img class="fragment fade-in-then-out" data-fragment-index="0" src="img/expans.png" width="40%" />
-
-<img  class="fragment fade-in-then-out" data-fragment-index="1" src="img/func3d.png" width="40%" />
-
-<span  class="fragment fade-in"  data-fragment-index="2" >
-
-$$|x| < R_c \equiv \left(  \lim_n \sup \left| f_n^{1/n} \right| \right)^{-1}$$
-
-- $R_c$ is the radius of convergence
-- $R_c =$ distance in the _complex_ plane from the expansion point to the
-  nearest singularity
-
-</span>
+<div class="fragment fade-out"  data-fragment-index="1"  >
+<img src="img/BasarYLE.png" height=350em >
+<img src="img/LatticeYLElocation.png" height=350em >
+<div class="cite">
+G. Basar, 2312.06952 <br>
+D. Clarke et. al., 2405.10196
 </div>
+</div>
+<img class="fragment current-visible" data-fragment-index="1" src="img/LatticeQCDPD.png" height=350em >
+</div>
+
+
+
+<div class=smallmath>
+$$ z=z_c \to \text{Re} (\mu-\mu_c) = c_1 (T-T_c) + c_2 (T-T_c)^2  \text{ and }  \text{Im} \mu = c_3 (T-T_c)^{\beta\delta}
+$$
+$$
+\leadsto 
+T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$ 
+</div>
+
+
+
 
 ---
 
-### Are there singularities associated with critical point/phase transitions?
+### What are singularities associated with critical point/phase transitions?
 
 ---
 
@@ -143,7 +127,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 --
 
-### Near YLE singularity
+### Near YLE singularity: $\frac{\partial^2 F}{\partial \phi^2} = 0 $
 
 - $f_G$ is singular
   $$f_G - f_G^c \propto (z-z_c)^{\color{red}{\sigma_{\rm YLE}}} $$
@@ -174,7 +158,8 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 ### Illustration in Ising model: $h = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
 
-<img src="img/IsingYLE.png"  width=550em>
+<img src="img/complexfg.png"  height=350em>
+<img src="img/complexfgBM.png"  height=350em>
 
 <div class="cite">
 F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
@@ -190,7 +175,7 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 - The phase of $z_c = |z_c| e^{\pm \frac{i \pi}{2 \beta \delta}}$ is defined by
   the critical exponents of the underlying universality class. How to find
   $|z_c|$?
-- Ordinary, we rely on two methods: $\varepsilon$-expansion and lattice
+- Ordinary, two methods: $\varepsilon$-expansion and lattice
 
   - $\varepsilon$-expansion breaks down: YLE is described by $\phi^3$ with upper
     critical dimension $d_c=6$, while underlying universality class has $d_c=4$
