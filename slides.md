@@ -173,11 +173,16 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 ### Universal location of YLE
 
 - The phase of $z_c = |z_c| e^{\pm \frac{i \pi}{2 \beta \delta}}$ is defined by
-  the critical exponents of the underlying universality class. How to find
-  $|z_c|$?
+  the critical exponents of the underlying universality class. 
 - Ordinary, two methods: $\varepsilon$-expansion and lattice
 
-  - $\varepsilon$-expansion breaks down: YLE is described by $\phi^3$ with upper
+  - $\varepsilon$-expansion: 
+    <div class="smallmath">
+    $$
+      \beta = \frac{1}{2} + \frac{1}{6} \varepsilon  + \frac{1}{162} \varepsilon^2 + \frac{1}{2} \left( \frac{163}{8748} - \frac{2}{27} \zeta(3) \right) \varepsilon^3 + {\cal O}(\varepsilon^4), \quad \epsilon = 4 - d 
+    $$
+    </div>
+    YLE is described by $\phi^3$ with upper
     critical dimension $d_c=6$, while underlying universality class has $d_c=4$
     <div class="cite"> M. Fisher, “Yang-Lee Edge Singularity and φ3 Field Theory”, Phys. Rev. Lett. 40 1610 (1978) </div>
     <div class="smallmath">
