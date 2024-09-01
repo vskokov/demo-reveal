@@ -1,10 +1,12 @@
-# Yang-Lee Edge singularity and <!-- .element: class="r-fit-text" -->
+## Universal location of  
 
-# and the structure of QCD phase diagram <!-- .element: class="r-fit-text" -->
+# Yang-Lee edge 
+
+## singularity from Functional RG 
 
 Vladi Skokov
 
-North Carolina state University
+North Carolina State University
 
 
 
@@ -14,11 +16,11 @@ North Carolina state University
 
 ## Outline
 
-- Introduction: why analytic structure? and what is Yang-Lee edge singularity? 
+- Introduction: why analytic structure of QCD? 
+
+- Introduction: what is YLE? 
 
 - Universal location of YLE for  most relevant universality classes 
-
-- Tracing YLE in QCD
 
 - Conclusions 
 
