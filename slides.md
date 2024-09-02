@@ -168,6 +168,26 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 - In contrast to the critical point, YLE form lines
 - YLE are continuously connected to critical point
 
+--
+
+
+### Do YLEs always connect to finite $T$ crit. points? 
+
+Counter example: one dimensional Ising model ($\hat h = h/T$, $\hat J = J /T$) 
+
+$$ 
+      f = - \lim_{L\to \infty} \frac{T}{L} \ln Z = -  T \ln \left( e^{\hat J} \cosh(\hat h) + \sqrt{ e^{2\hat J} \sinh^2(\hat h) + e^{-2\hat J}  } \right), 
+$$ 
+
+with YLE at 
+
+$$
+    h_c = \pm i T \arcsin e^{-2\hat J}\, 
+$$
+
+Two YLEs pinch the real $h$ axis at $T=0$ 
+
+
 ---
 
 ### Universal location of YLE
