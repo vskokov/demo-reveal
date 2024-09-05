@@ -16,41 +16,35 @@ North Carolina State University
 
 ## Outline
 
-- Introduction: why analytic structure of QCD? 
+- Introduction: why analytic structure near second-order phase transition? 
 
-- Introduction: what is YLE? 
+- Introduction: Yang-Lee edge (YLE) singularity? 
 
-- Universal location of YLE for  most relevant universality classes 
+- Universal location of YLE for most relevant universality classes from FRG 
 
 - Conclusions 
 
 ---
-### Tracing singularity: chiral critical point  
+### Tracing singularity: QCD critical point  
 
 
-Lattice input from Taylor series coeff. at $\mu=0$ or  Im $\mu$  \&  analytic continuation 
+Lattice input (Taylor series coeff.  at $\mu=0$ or  Im $\mu$) \&  analytic continuation 
 
-<div class="r-stack">
 
-<div class="fragment fade-out"  data-fragment-index="1"  >
 <img src="img/BasarYLE.png" height=350em >
 <img src="img/LatticeYLElocation.png" height=350em >
 <div class="cite">
 G. Basar, 2312.06952 <br>
 D. Clarke et. al., 2405.10196
 </div>
-</div>
-<img class="fragment current-visible" data-fragment-index="1" src="img/LatticeQCDPD.png" height=350em >
-</div>
 
 
 
 <div class=smallmath>
-$$ z=z_c \to \text{Re} (\mu-\mu_c) = c_1 (T-T_c) + c_2 (T-T_c)^2  \text{ and }  \text{Im} \mu = c_3 (T-T_c)^{\beta\delta}
-$$
 $$
 \leadsto 
-T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$ 
+T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}
+$$ 
 </div>
 
 
