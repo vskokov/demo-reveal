@@ -18,11 +18,22 @@ North Carolina State University
 
 - Introduction: why analytic structure near second-order phase transition? 
 
-- Introduction: Yang-Lee edge (YLE) singularity? 
+- Introduction: Yang-Lee edge (YLE) singularity 
 
 - Universal location of YLE for most relevant universality classes from FRG 
 
+- What we can learn about QCD critical point from YLE?  
+
 - Conclusions 
+
+
+---
+
+### QCD Phase diagram
+
+<img src="img/phase.png" width="80%">
+
+
 
 ---
 ### Tracing singularity: QCD critical point  
@@ -43,10 +54,14 @@ D. Clarke et. al., 2405.10196
 <div class=smallmath>
 $$
 \leadsto 
-T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}
+T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV } \text{in approximate agreement with FRG & DSE} 
 $$ 
 </div>
 
+<div class="cite">
+Wei-Jie Fu, J. Pawlowski,  and F. Rennecke, 1909.02991 <br>
+P. Isserstedt et. al., 1906.11644
+</div>
 
 
 
@@ -56,7 +71,7 @@ $$
 
 ---
 
-### Example: Landau free energy
+### Toy model: Landau free energy
 
 `\[ F = \int d^{d} x \left(  \frac{1}{2} t \phi^2 + \frac{1}{4}  \lambda \phi^4 - h \phi   \right) \]`
 
@@ -66,31 +81,33 @@ E.g.:
 - near CP: $t,h \propto \alpha_{t,h}(T-T_c) + \beta_{t,h} (\mu-\mu_c)$
 - near RW: $t \propto T-T_{RW}$, $h\propto \mu_B - i \pi T$
 
---
+---
 
 ### Vary $h$
 
-<img src="img/LandauPD.png" width="42%">
-<img src="img/LandauFE.png" width="40%">
+<img src="img/LandauPD.png" width="48.5%">
+<img src="img/LandauFE.png" width="46%">
 
---
+---
 
 ### Vary $t$
 
-<img src="img/LandauPD.png" width="42%">
-<img src="img/LandauFE2.png" width="40%">
+<img src="img/LandauPD.png" width="48.5%">
+<img src="img/LandauFE2.png" width="46%">
 
---
+---
 
 ### Magnetic equation of state
 
 `\[ F = \int d^{d} x \left(  \frac{1}{2} t \phi^2 + \frac{1}{4}  \lambda \phi^4 - h \phi   \right) \]`
 
+Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
+
 <div class="container">
 
-<div class="col" data-markdown>
 
-Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
+  <div class="col" data-markdown>
+
 
 - Arbitrary $t$ and $h$: $t \phi + \lambda \phi^3 = h$
 - To simplify math $\lambda\to1$: $t \phi + \phi^3 = h$
@@ -109,24 +126,24 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 </div>
 
-- Scaling form of "magnetic equation of state"
+- Scaling form of the "magnetic equation of state"
   $$f_G ( {\color{red}{z}}  + f_G^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } } \quad\text{with} \quad  \beta = 1/2, \delta=3$$
 
---
+---
 
 ### Yang-Lee edge singularity
 
 <img src="img/fg3d.png">
 
 
---
+---
 
 ### Near YLE singularity: $\frac{\partial^2 F}{\partial \phi^2} = 0 $
 
 - $f_G$ is singular
   $$f_G - f_G^c \propto (z-z_c)^{\color{red}{\sigma_{\rm YLE}}} $$
 
-- The critical exponent ${\color{red}{\sigma_{\rm YLE}}}$ is independent of the
+- Critical exponent ${\color{red}{\sigma_{\rm YLE}}}$ is independent of the
   underlying universality class
 
 - From conformal bootrstrap, $\color{red}{\sigma^{d=3}_{\rm YLE}} = 0.085(1)$
@@ -148,9 +165,9 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
  <p class="fragment fade-in" data-fragment-index="2"> 1 independent crit. exp., c.f.  standard critical point with 2 independent crit. exp. </p>
 
---
+---
 
-### Illustration in Ising model: $h = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
+### Illustration in Ising model: $h_c(t) = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
 
 <img src="img/complexfg.png"  height=350em>
 <img src="img/complexfgBM.png"  height=350em>
@@ -159,10 +176,10 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 </div>
 
-- In contrast to the critical point, YLE form lines
-- YLE are continuously connected to critical point
+- In contrast to the critical point, YLEs form lines
+- YLEs are continuously connected to critical point
 
---
+---
 
 
 ### Do YLEs always connect to finite $T$ crit. points? 
@@ -176,7 +193,7 @@ $$
 with YLE at 
 
 $$
-    h_c = \pm i T \arcsin e^{-2\hat J}\, 
+    h_c = \pm i T \arcsin e^{-2\hat J}
 $$
 
 Two YLEs pinch the real $h$ axis at $T=0$ 
@@ -187,7 +204,7 @@ Two YLEs pinch the real $h$ axis at $T=0$
 ### Universal location of YLE
 
 - The phase of $z_c = |z_c| e^{\pm \frac{i \pi}{2 \beta \delta}}$ is defined by
-  the critical exponents of the underlying universality class. 
+  the critical exponents of the underlying universality class.  How to determine $|z_c|$?  
 - Ordinary, two methods: $\varepsilon$-expansion and lattice
 
   - $\varepsilon$-expansion: 
@@ -236,7 +253,7 @@ Two YLEs pinch the real $h$ axis at $T=0$
 **Pros:** Exact, non-perturbative, no sign problem. **Cons**: requires
 truncation.
 
---
+---
 
 ### Truncation: derivative expansion
 
@@ -268,7 +285,7 @@ truncation.
        \end{aligned}
   $$
 
---
+---
 
 ### Truncation: derivative expansion
 
@@ -297,7 +314,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 116013
 </div>
 
---
+---
 
 ### Truncation: series expansion
 
@@ -321,7 +338,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 
   - Months on an HPC
 
---
+---
 
 ### Results: importance of fluctuations ($N$=1)
 
@@ -382,7 +399,7 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 
 
---
+---
 
 
 ### Analytic structure in QCD: $T\to T_c$
@@ -393,7 +410,7 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 
 
---
+---
 
 
 ### Analytic structure in QCD: $T\to T_{RW}$
@@ -456,7 +473,7 @@ $$
 T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$ 
 </div>
 
---
+---
 
 ### Taking it further 
 
@@ -488,7 +505,7 @@ $$
 <div class="cite">
  M. Bryant, C. Schmidt, V. S., 2401.06489 
 </div>
---
+---
 
 ### Fourier coefficients
 
@@ -509,12 +526,11 @@ $$
   - Xu and Zamolodchikov determined location of YLE in Ising Field Theory, $d=2$
     and $N=1$
 - To map universal location to QCD, one requires non-universal metric factors.
-  They are generically are not known.
+  They are generically not known.
 - Nevertheless properties of YLE singularities might be useful in establishing
   existence/location of QCD critical point
   - YLE is continuously connected to critical point; 
-  - Two distinct approaches based on lattice input from Taylor coefficients and imaginary $\mu$ $\leadsto$ approximately the same $T_c$ 
-  - Critical exponent $\sigma$ at YLE is universal and independent of $N$; it
+  - Two distinct approaches based on lattice input from Taylor coefficients and imaginary $\mu$ $\leadsto$ approximately the same $T_c$; more checks: $\sigma_{\rm YLE}$ is universal and independent of $N$; it
     predicts the behaviour of Lee-Yang zeroes and their scaling with volume
   - Associated analytic structure of complex $\mu$-plane constraints the
     behaviour of Fourier coefficients
