@@ -313,10 +313,10 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 - Taylor series expansion of $U_k(\phi)$ and $Z_k(\phi)$ (orders 12 and 6
   respectively)
 
-  - Traditionally: expand near $k$-dependent minimum: $U_k'[\phi_k] = h =$
-    const.
+  - Usually: expand near $k$-dependent minimum: $U_k'[\phi_k] = h =$
+    const
 
-  - To locate YLE: expand near $U_k''[\phi_k] = m^2 \to 0$.
+  - To locate YLE: expand near $U_k''[\phi_k] = m^2 \to 0$
 
     $\leadsto$ $U_k'[\phi_k] = h_k \ne$ const
 
