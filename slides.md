@@ -101,14 +101,10 @@ E.g.:
 
 `\[ F = \int d^{d} x \left(  \frac{1}{2} t \phi^2 + \frac{1}{4}  \lambda \phi^4 - h \phi   \right) \]`
 
-Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
+- Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
 
 <div class="container">
-
-
   <div class="col" data-markdown>
-
-
 - Arbitrary $t$ and $h$: $t \phi + \lambda \phi^3 = h$
 - To simplify math $\lambda\to1$: $t \phi + \phi^3 = h$
 - Ansatz for the solution $\phi = h^{1/3} f_G$
@@ -117,13 +113,9 @@ $t h^{1/3} f_G  + h f_G^3 = h$ or
 ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 </div>
-
 <div class="col" data-markdown>
-
 <img class="fragment fade-in"  data-fragment-index="1"  src="img/fg.png" width="80%">
-
 </div>
-
 </div>
 
 - Scaling form of the "magnetic equation of state"
@@ -151,7 +143,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 - Mean-field approximation gets it wrong:
   ${\sigma^{\rm MF}_{\rm YLE}} = \frac12$
 
-- Not surprisingly, mean-field gets $z_c$ wrong as well
+- One should not expect to mean field's $z_c$ to be a good approximation either  
 
 - $z_c$ is universal: for $O(N)$, $z_c$ depends only on $N$ and $d$
 
