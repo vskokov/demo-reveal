@@ -249,7 +249,7 @@ truncation.
 
 ### Truncation: derivative expansion
 
-- Near critical point: long wave excitations $\leadsto$ expansion around the
+- Near critical point: long wave excitations $\leadsto$ expansion around 
   uniform field
 
 - First-order derivative expansion
