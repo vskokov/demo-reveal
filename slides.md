@@ -22,7 +22,7 @@ North Carolina State University
 
 - Universal location of YLE for most relevant universality classes from FRG 
 
-- What we can learn about QCD critical point from YLE?  
+- What can we  learn about QCD critical point from YLE?  
 
 - Conclusions 
 
