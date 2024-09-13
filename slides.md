@@ -295,10 +295,9 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 
 ### Truncation: series expansion
 
-- Taylor series expansion of $U_k(\phi)$ and $Z_k(\phi)$ (orders 12 and 6
-  respectively)
+- Taylor series expansion of $U_k(\phi)$ and $Z_k(\phi)$ truncated at  $(N_U, N_Z) = (12,6)$
 
-  - Traditionally: expand near $k$-dependent minimum: $U_k'[\phi_k] = h =$
+  - Usually: expansion near $k$-dependent minimum: $U_k'[\phi_k] = h =$
     const.
 
   - To locate YLE: expand near $U_k''[\phi_k] = m^2 \to 0$.
@@ -307,6 +306,14 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 
     $\leadsto$ Calculations in the broken phase are not feasible
 
+
+
+- Uncertainty due to the truncation dependence ($\Delta_{trunc}$) is estimated by the maximum of the differences between  $|\zeta_c|$  computed at orders $(12,6) - (10,6)$ and   $(12,6) - (12,4)$  
+
+
+--
+### After the truncation 
+
 - 18-26 coupled stiff differential equations
 
   - Mathematica to obtain equations (multiple Gb)
@@ -314,6 +321,44 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
   - Implicit solvers for ODE's
 
   - Months on an HPC
+
+
+--
+### Regulator dependence \& minimal sensitivity 1
+
+- To estimate the systematic uncertainty of truncations:  include  a free parameter in the regulator 
+
+$$
+    R_k(q^2) = {\color{red} a} Z^{\\|}_k (k^2 - q^2) \theta(k^2-q^2)
+$$
+
+
+<img src="img/msa.png" width=100% >
+
+<div class="smallmath">
+$\Delta = \beta \delta$ is the gap critical exponent (defines the phase of $z_c$)
+</div>
+
+
+--
+
+### Regulator dependence \& minimal sensitivity 2
+
+- $a_\\Delta$ and $a_\eta$ might not be the most crucial as long as $|z_c|$ is concerned 
+
+- Additionally, we perform minimal sensitivity analysis for  $h_c$ ($z_c = t / h_c^{1/\Delta}$) 
+
+
+| N                              | 1      | 2       | 3      | 4      |
+| ---- | ------ | ------- | ------ | ------ |
+| $a_\\Delta$                       | 0.5108 |  0.5069 | 0.5026 | 0.5044 |
+| $a_\\eta$                         | 0.5044 | 0.5075 | 0.5064 | 0.4906  |
+| $a_h$                            | 0.6299 | 0.5921   | 0.5724  | 0.5617 |
+
+
+
+- Uncertainty due to the regulator dependence ($\Delta_{reg}$) is estimated by the difference between  $|\zeta_c|$  computed at $a_\\Delta$ and $a_h$ 
+
 
 --
 
@@ -336,7 +381,7 @@ $d$ does not have to be integer in FRG
 
 | d                                | 1   | 2          | 3        | 4           |
 | -------------------------------- | --- | ---------- | -------- | ----------- |
-| $ \| z_c \| /R\_\chi^{1/\gamma}$ | 1   | 1.32504(2) | 1.621(4) | $3/2^{2/3}$ |
+| $ \| z_c \| /R\_\chi^{1/\gamma} (N_{trunc})$ | 1   | 1.32504(2) | 1.621(4) | $3/2^{2/3}$ |
 
 <div class="cite">
 G. Johnson, F. Rennecke, and V. S, Phys.Rev.D 107 (2023) 11,
@@ -355,9 +400,9 @@ Zamolodchikov, 2304.07886
 
 <img src="img/zeta.png" width=45% >
 
-| N                                | 1           | 2           | 3           | 4           | 5            |
-| -------------------------------- | ----------- | ----------- | ----------- | ----------- | ------------ |
-| $ \| z_c \| /R\_\chi^{1/\gamma}$ | 1.621(4)(1) | 1.612(9)(0) | 1.604(7)(0) | 1.597(3)(0) | 1.5925(2)(1) |
+| N                                | 1           | 2           | 3           | 4           | 
+| -------------------------------- | ----------- | ----------- | ----------- | ----------- |
+| $ \| z_c \| /R\_\chi^{1/\gamma} (N_{trunc}) (N_{reg})$ | 1.621(4)(1) | 1.612(9)(0) | 1.604(7)(0) | 1.597(3)(0)  |
 
 <div class="cite">
 G. Johnson, F. Rennecke, and V. S, Phys.Rev.D 107 (2023) 11,
