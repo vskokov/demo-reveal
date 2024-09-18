@@ -1,6 +1,6 @@
-# Yang-Lee Edge singularity and <!-- .element: class="r-fit-text" -->
+# Yang-Lee edge singularity <!-- .element: class="r-fit-text" -->
 
-# and the structure of QCD phase diagram <!-- .element: class="r-fit-text" -->
+# with functional renormalization group  <!-- .element: class="r-fit-text" -->
 
 Vladi Skokov
 
@@ -14,91 +14,91 @@ North Carolina state University
 
 ## Outline
 
-- Introduction: why analytic structure? and what is Yang-Lee edge singularity? 
+- Introduction: what is Yang-Lee Edge (YLE) singularity?
+  - Second order phase transition 
+  - Universal magnetic equation of state 
+  - Analytic structure near a critical point
+  - YLE and spinodals
+  - Why no results on YLE for about five decades? 
 
 - Universal location of YLE for  most relevant universality classes 
+  - FRG to locate YLE 
+  - Analysis of systematic uncertainty 
 
-- Tracing YLE in QCD
+- Tracing YLE in QCD 
+  - Roberge-Weiss phase transition 
+  - Critical end point 
 
 - Conclusions 
 
 
 ---
 
-### QCD Phase diagram
+### QCD phase diagram 
 
-<img src="img/phase.png" width="50%">
+- This talk is about universal properties near a second order phase transition 
 
-- Experiment with relativistic heavy ions: the system is small and has a short
-  lifetime
-- Theory: although the underlying theory (QCD) is known, we cannot solve it
-  &cross;
-- Numerical methods: zero density region only due to the ``sign'' problem
-  &cross;
-- Indirect methods: Taylor series coefficients/imaginary $\mu$ $\to$ non-zero
-  baryon density &check;
+- Motivation: QCD phase diagram
 
-<span style="font-size:0.8em;">
+<img src="img/phase.png" width="70%">
 
-`\[  p/T^4 = \sum_{n=0}^{\infty} \frac{  \chi_n }{n!}\left(\frac{\mu}{T}\right)^n;  \quad  \chi_n = \frac{ \partial^n(p/T^4)} { \partial\ (\mu/T)^n}  \quad     {\color{gray}  \chi_2 =  \frac{ \langle (\delta N)^2 \rangle   }{VT^3}     \quad   \chi_4 = \frac{ \langle (\delta N)^4 \rangle  -  3 \langle (\delta N)^2 \rangle^2  }{VT^3}}  \]`
-
-</span>
 
 ---
 
-### Taylor series expansion
+### Analytic continuation 
 
-- Consider an arbitrary function expanded around a regular point
-  $$f(x) = \sum_{n=0}^{\infty} \frac{1}{n!}  f_n x^{n}$$
-- What limits the predictive power of this expansion?
-e.g.  $f(x) = 1/(e^x+1)$ .
 
-<div class="r-stack">
+- Lattice MC is one of the leading methods to study QCD
 
-<img class="fragment fade-in-then-out" data-fragment-index="0" src="img/expans.png" width="40%" />
+- Sign problem limits utility of the method to zero _real_ baryon chemical potential:
+  - Taylor series expansion at $\mu_B =0$ 
+  - Calculations at purely imaginary $\mu_B$ 
 
-<img  class="fragment fade-in-then-out" data-fragment-index="1" src="img/func3d.png" width="40%" />
+- To learn about _real_ baryon chemical potential: analytic  continuation
 
-<span  class="fragment fade-in"  data-fragment-index="2" >
+- Analytic continuation requires  knowledge of analytic structure 
 
-$$|x| < R_c \equiv \left(  \lim_n \sup \left| f_n^{1/n} \right| \right)^{-1}$$
+- Reversely, analytic structure can help reveal QCD phase structure 
 
-- $R_c$ is the radius of convergence
-- $R_c =$ distance in the _complex_ plane from the expansion point to the
-  nearest singularity
-
-</span>
-</div>
+- Thus, there is an important question to consider
 
 ---
 
-### Are there singularities associated with critical point/phase transitions?
+### Are there singularities  associated <!-- .element: class="r-fit-text" -->
+
+
+###  with critical point/phase transitions?  <!-- .element: class="r-fit-text" -->
+
 
 ---
 
-### Example: Landau free energy
+### Second-order phase transition:  Landau model
 
-`\[ F = \int d^{d} x \left(  \frac{1}{2} t \phi^2 + \frac{1}{4}  \lambda \phi^4 - h \phi   \right) \]`
+- To set up the stage, introduce  notation and relevant concepts, best to consider Landau model 
+
+
+
+`\[ F = \int d^{d} x \left(  \frac{1}{2} {\color{red} t} \phi^2 + \frac{1}{4}  \lambda \phi^4 - {\color{blue} h} \phi   \right) \]`
 
 E.g.: 
 
-- near chiral limit: $t \propto T-T_c + \kappa \mu^2$, $h\propto m_{u,d}$
-- near CP: $t,h \propto \alpha_{t,h}(T-T_c) + \beta_{t,h} (\mu-\mu_c)$
-- near RW: $t \propto T-T_{RW}$, $h\propto \mu_B - i \pi T$
+- near chiral limit: ${\color{red} t} \propto T-T_c + \kappa \mu^2$, ${\color{blue} h}\propto m_{u,d}$
+- near CP: ${\color{red}t},{\color{blue}h} \propto \alpha_{t,h}(T-T_c) + \beta_{t,h} (\mu-\mu_c)$
+- near RW: ${\color{red}t} \propto T-T_{RW}$, ${\color{blue}h}\propto \mu_B - i \pi T$
 
 --
 
 ### Vary $h$
 
-<img src="img/LandauPD.png" width="42%">
-<img src="img/LandauFE.png" width="40%">
+<img src="img/isingvh.png" width="42.5%">
+<img src="img/firstorderising.png" width="40%">
 
 --
 
 ### Vary $t$
 
-<img src="img/LandauPD.png" width="42%">
-<img src="img/LandauFE2.png" width="40%">
+<img src="img/isingpdvt.png" width="42.5%">
+<img src="img/secondorderising.png" width="40%">
 
 --
 
@@ -113,24 +113,24 @@ E.g.:
 Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
 
 - Arbitrary $t$ and $h$: $t \phi + \lambda \phi^3 = h$
-- To simplify math $\lambda\to1$: $t \phi + \phi^3 = h$
-- Ansatz for the solution $\phi = h^{1/3} f_G$
+- Simplify: $\lambda\to1$: $t \phi + \phi^3 = h$
+- Ansatz for the solution $\phi = h^{1/3} {\color{Emerald}f_G}$
 
-$t h^{1/3} f_G  + h f_G^3 = h$ or
-${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
+$t h^{1/3} {\color{Emerald}f_G}  + h {\color{Emerald}f_G}^3 = h$ or
+${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G}^3 = 1$
 
 </div>
 
 <div class="col" data-markdown>
 
-<img class="fragment fade-in"  data-fragment-index="1"  src="img/fg.png" width="80%">
+<img class="fragment fade-in"  data-fragment-index="1"  src="img/meos.png" width="80%">
 
 </div>
 
 </div>
 
-- Scaling form of "magnetic equation of state"
-  $$f_G ( {\color{red}{z}}  + f_G^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } } \quad\text{with} \quad  \beta = 1/2, \delta=3$$
+- Scaling form of ${\color{Emerald} \text{magnetic equation of state}}$
+  $${\color{Emerald} f_G} ( {\color{red}{z}}  + {\color{Emerald}f_G}^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } } \quad\text{with} \quad  \beta = 1/2, \delta=3$$
 
 --
 
@@ -141,20 +141,20 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 --
 
-### Near YLE singularity
+### Near YLE singularity:  $\frac{\partial^2 F}{\partial \phi^2} = 0 $
 
 - $f_G$ is singular
   $$f_G - f_G^c \propto (z-z_c)^{\color{red}{\sigma_{\rm YLE}}} $$
 
-- The critical exponent ${\color{red}{\sigma_{\rm YLE}}}$ is independent of the
-  underlying universality class
+- Critical exponent ${\color{red}{\sigma_{\rm YLE}}}$ is independent of the
+  underlying universality class (for O(N), $\sigma_{\rm YLE}$ is $N$-independent); superuniversality 
 
 - From conformal bootrstrap, $\color{red}{\sigma^{d=3}_{\rm YLE}} = 0.085(1)$
 
 - Mean-field approximation gets it wrong:
   ${\sigma^{\rm MF}_{\rm YLE}} = \frac12$
 
-- Not surprisingly, mean-field gets $z_c$ wrong as well
+- Mean-field approximation also does not get correct $z_c$   
 
 - $z_c$ is universal: for $O(N)$, $z_c$ depends only on $N$ and $d$
 
@@ -162,52 +162,117 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } f_G  + f_G^3 = 1$
 
 ---
 
-| Type of critical point:       | <p class="fragment fade-in" data-fragment-index="2"> protocritical = YLE </p> | critical | tricritical |
+| Type of critical point:       | <p class="fragment fade-in" data-fragment-index="2"> ${\color{red} \text{protocritical = YLE}}$ </p> | critical | tricritical |
 | ----------------------------- | ----------------------------------------------------------------------------- | -------- | ----------- |
-| Number of relevant variables: | <p class="fragment fade-in" data-fragment-index="1"> 1 </p> &nbsp;            | 2        | 4           |
+| Number of relevant variables: | <p class="fragment fade-in" data-fragment-index="1"> ${\color{\red}1}$  </p> &nbsp;            | 2        | 4           |
 
  <p class="fragment fade-in" data-fragment-index="2"> 1 independent crit. exp., c.f.  standard critical point with 2 independent crit. exp. </p>
 
 --
 
-### Illustration in Ising model: $h = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
 
-<img src="img/IsingYLE.png"  width=550em>
+### Illustration in Ising model: $h_c(t) = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
+
+<img src="img/complexfg.png"  width=46.5%>
+<img src="img/complexfgBM.png"  width=45%>
 
 <div class="cite">
 F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 </div>
 
-- In contrast to the critical point, YLE form lines
-- YLE are continuously connected to critical point
+- In contrast to the critical point, YLEs form lines
+- YLEs are continuously connected to critical point
+- On YLE lines, the mass of the critical  mode  is zero 
+
 
 ---
 
 ### Universal location of YLE
 
 - The phase of $z_c = |z_c| e^{\pm \frac{i \pi}{2 \beta \delta}}$ is defined by
-  the critical exponents of the underlying universality class. How to find
-  $|z_c|$?
-- Ordinary, we rely on two methods: $\varepsilon$-expansion and lattice
+  the critical exponents of the underlying universality class.  
 
-  - $\varepsilon$-expansion breaks down: YLE is described by $\phi^3$ with upper
-    critical dimension $d_c=6$, while underlying universality class has $d_c=4$
-    <div class="cite"> M. Fisher, “Yang-Lee Edge Singularity and φ3 Field Theory”, Phys. Rev. Lett. 40 1610 (1978) </div>
-    <div class="smallmath">
-    Only leading order under perturbative control
+- How to determine $|z_c|$?  
 
+
+- Ordinary, two methods: 
+
+  - $\varepsilon$-expansion 
+
+  - lattice
+
+
+--
+
+###  $\varepsilon$-expansion to locate YLE  ⛔
+     
+
+
+ - Ordinary, $\varepsilon$-expansion is equivalent to  loop expansion; e.g.    
     $$
-    |z_c| \approx  |z_c^{\rm MF}| \left[1 +  \frac{ 27 \ln \left(\frac{3}{2}\right) -  (N-1)  \ln 2}{9
-    (N+8)}\epsilon \right] + \epsilon^2 \log \epsilon \times  ( \cdots ) .
+      \beta = \frac{1}{2} + \frac{1}{6} \varepsilon  + \frac{1}{162} \varepsilon^2 + \frac{1}{2} \left( \frac{163}{8748} - \frac{2}{27} \zeta(3) \right) \varepsilon^3 + {\cal O}(\varepsilon^4), \quad \epsilon = 4 - d 
     $$
 
-    </div>
+- Ginzburg-Landau theory near YLE: $\phi = \phi_{\rm YLE} + \varphi$: 
 
-  - lattice: direct calculations at complex values of parameters are impossible
-    due to sign problem; indirectly lattice can provide information about YLE
-    <div class="cite">  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
+$$ L \approx (\nabla \varphi)^2  - \lambda \phi_{\rm YLE}\   {\color{red}\varphi^3}   - H \varphi   $$
 
-- Functional Renormalization group provides most precise $|z_c|$ in $d=3$
+
+- YLE is described by ${\color{red}\varphi^3}$ with upper critical dimension ${\color{red} d_c=6}$, </br> 
+ while underlying universality class  ($\phi^4$) has $d_c=4$
+<div class="cite"> M. Fisher, “Yang-Lee Edge Singularity and φ3 Field Theory”, Phys. Rev. Lett. 40 1610 (1978) </div>
+
+- Only *leading correction* is under perturbative control; </br> 
+expansion in $\varepsilon \ne$ expansion in loops 
+
+$$
+|z_c| \approx  |z_c^{\rm MF}| \left[1 +  \frac{ 27 \ln \left(\frac{3}{2}\right) -  (N-1)  \ln 2}{9
+(N+8)}\epsilon \right] + \epsilon^2 \log \epsilon \times  ( \text{all loops} ) 
+$$
+
+
+
+
+
+--
+
+### Lattice  ⛔
+     
+- Direct calculations at complex values of parameters are impossible
+    due to sign problem
+- Indirectly lattice can provide information about YLE through analytic continuation 
+    <div class="cite"> E.g.  through Schofield representation in  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
+
+
+--
+
+
+FRG approach is <!-- .element: class="r-fit-text" -->
+
+uniquely  suited <!-- .element: class="r-fit-text" -->
+
+for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
+
+--
+
+### FRG ✅ 
+
+
+- No sign problem 
+- Non-perturbative 
+- Working near second-order critical point $\leadsto$ justified truncation scheme 
+- Validated by computing critical exponents and amplitude ratios
+
+| $N=1, d=3$  | $\nu$        | $\eta$ |
+|---|-------------|--|            
+|FRG|0.63012(16)   | 0.0361(11) | 
+|CB|         0.629971(4)      | 0.0362978(20) |
+
+<div class="cite"> G. De Polsi, I. Balog, M. Tissier, N. Wschebor, 2001.07525   </div>
+<div class="cite"> G. De Polsi, G. Hernández-Chifflet, N. Wschebor, 2109.14731   </div>
+
+- As a bonus: calculations are possible at any $d$ and $N$ (including non-integer). 
+
 
 ---
 
@@ -230,39 +295,10 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 **Pros:** Exact, non-perturbative, no sign problem. **Cons**: requires
 truncation.
 
---
 
-### Truncation: derivative expansion
-
-- Near critical point: long wave excitations $\leadsto$ expansion around the
-  uniform field
-
-- First-order derivative expansion
-
-  $$
-  \begin{aligned}
-       \notag
-       \Gamma_k[\phi] = \int d^d x \left( U_k(\phi)  + \frac {1 } { 2 }  Z_k(\phi)  (\partial_i \phi)^2 \right)
-       \end{aligned}
-  $$
-
-  - The average potential
-
-  $$
-  \begin{aligned}
-           \partial_t U_k(\rho) &= \frac{1}{2} \int \bar d^dq   \partial_t R_k\left(q^2\right) \Big[G_k^\parallel+(N-1) G_k^\perp\Big], \quad \rho = \frac{\phi^2}{2}
-       \end{aligned}
-  $$
-
-  with
-
-  $$
-  \begin{aligned}
-       &G_k^{\perp} =  \frac{1}{Z_k^{\perp}(\rho)q^2 + U_k'(\rho) + R_k(q^2)}, \quad G_k^{\parallel} =  \frac{1}{Z_k^{\parallel}(\rho)q^2 + U_k'(\rho)+2\rho U_k''(\rho) + R_k(q^2)}.
-       \end{aligned}
-  $$
 
 --
+
 
 ### Truncation: derivative expansion
 
@@ -290,6 +326,7 @@ $
 G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 116013
 </div>
+
 
 --
 
@@ -482,7 +519,7 @@ G. Basar, 2312.06952 <br>
 D. Clarke et. al., 2405.10196
 </div>
 </div>
-<img class="fragment current-visible" data-fragment-index="1" src="img/LatticeQCDPD.png" height=350em >
+<img class="fragment current-visible" data-fragment-index="1" src="img/clarke.png" height=350em >
 </div>
 
 
@@ -542,18 +579,16 @@ $$
 
 ### Conclusions
 
+- Every second order phase transition comes with Yang-Lee edge singularity. In the "crossover" region, there is a singularity in the complex plane
 - Universal location of YLE was one of not many unknown universal quantities
-  - FRG allowed us to find the universal location of YLE for $d>2.7$ and
-    arbitrary $N$
+  - FRG is uniquely positioned to determine the universal location of YLE with precision. In our work, $d>2.7$ and arbitrary $N$
   - Xu and Zamolodchikov determined location of YLE in Ising Field Theory, $d=2$
     and $N=1$
 - To map universal location to QCD, one requires non-universal metric factors.
-  They are generically are not known.
+  They are generically are not known
 - Nevertheless properties of YLE singularities might be useful in establishing
   existence/location of QCD critical point
-  - YLE is continuously connected to critical point; 
+  - YLE is continuously connected to critical point 
   - Two distinct approaches based on lattice input from Taylor coefficients and imaginary $\mu$ $\leadsto$ approximately the same $T_c$ 
-  - Critical exponent $\sigma$ at YLE is universal and independent of $N$; it
-    predicts the behaviour of Lee-Yang zeroes and their scaling with volume
   - Associated analytic structure of complex $\mu$-plane constraints the
     behaviour of Fourier coefficients
