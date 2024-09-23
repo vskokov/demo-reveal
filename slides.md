@@ -47,12 +47,27 @@ North Carolina state University
 
 ### Analytic continuation 
 
-
 - Lattice MC is one of the leading methods to study QCD
+
+<div class="container">
+
+<div class="col" data-markdown>
+
 
 - Sign problem limits utility of the method to zero _real_ baryon chemical potential:
   - Taylor series expansion at $\mu_B =0$ 
   - Calculations at purely imaginary $\mu_B$ 
+
+
+</div>
+
+<div class="col" data-markdown>
+
+<img  src="img/qcdpd.png" width="60%">
+
+</div>
+
+</div>
 
 - To learn about _real_ baryon chemical potential: analytic  continuation
 
@@ -61,6 +76,9 @@ North Carolina state University
 - Reversely, analytic structure can help reveal QCD phase structure 
 
 - Thus, there is an important question to consider
+
+
+
 
 ---
 
