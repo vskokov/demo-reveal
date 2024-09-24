@@ -40,36 +40,37 @@ North Carolina state University
 
 - Motivation: QCD phase diagram
 
-<img src="img/phase.png" width="70%">
+<img src="img/phase.png" width="55%">
 
+The only phase diagram of Standard Model of fundamental particles that can be studied in laboratory  
 
 ---
 
 ### Analytic continuation 
 
-- Lattice MC is one of the leading methods to study QCD
 
 <div class="container">
 
 <div class="col" data-markdown>
 
+- Lattice MC is one of the leading methods to study QCD
 
 - Sign problem limits utility of the method to zero _real_ baryon chemical potential:
   - Taylor series expansion at $\mu_B =0$ 
   - Calculations at purely imaginary $\mu_B$ 
 
 
+- To learn about _real_ baryon chemical potential: analytic  continuation
 </div>
 
 <div class="col" data-markdown>
 
-<img  src="img/qcdpd.png" width="60%">
+<img  src="img/qcdpd.png" width="70%">
 
 </div>
 
 </div>
 
-- To learn about _real_ baryon chemical potential: analytic  continuation
 
 - Analytic continuation requires  knowledge of analytic structure 
 
@@ -137,19 +138,19 @@ Minimize $F[\phi]$ $\leadsto$ equilibrium order parameter:
 $t h^{1/3} {\color{Emerald}f_G}  + h {\color{Emerald}f_G}^3 = h$ or
 ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G}^3 = 1$
 
+
+
 </div>
 
 <div class="col" data-markdown>
 
-<img class="fragment fade-in"  data-fragment-index="1"  src="img/meos.png" width="80%">
+<img class="fragment fade-in"  data-fragment-index="1"  src="img/meos.png" width="70%">
 
 </div>
 
 </div>
-
-- Scaling form of ${\color{Emerald} \text{magnetic equation of state}}$
-  $${\color{Emerald} f_G} ( {\color{red}{z}}  + {\color{Emerald}f_G}^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } } \quad\text{with} \quad  \beta = 1/2, \delta=3$$
-
+- Scaling form of ${\color{Emerald} \text{magnetic equation of state}}$ ($\beta = 1/2, \delta=3$)
+  $${\color{Emerald} f_G} ( {\color{red}{z}}  + {\color{Emerald}f_G}^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } }$$
 --
 
 ### Yang-Lee edge singularity
@@ -259,7 +260,9 @@ $$
 - Direct calculations at complex values of parameters are impossible
     due to sign problem
 - Indirectly lattice can provide information about YLE through analytic continuation 
-    <div class="cite"> E.g.  through Schofield representation in  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
+
+</p>    
+<div class="cite"> E.g.  through Schofield representation in  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
 
 
 --
@@ -310,8 +313,6 @@ for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
 
 <div class="cite"> Wetterich, 1993</div>
 
-**Pros:** Exact, non-perturbative, no sign problem. **Cons**: requires
-truncation.
 
 
 
