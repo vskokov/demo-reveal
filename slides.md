@@ -105,21 +105,21 @@ E.g.:
 - near CP: ${\color{red}t},{\color{blue}h} \propto \alpha_{t,h}(T-T_c) + \beta_{t,h} (\mu-\mu_c)$
 - near RW: ${\color{red}t} \propto T-T_{RW}$, ${\color{blue}h}\propto \mu_B - i \pi T$
 
---
+---
 
 ### Vary $h$
 
 <img src="img/isingvh.png" width="42.5%">
 <img src="img/firstorderising.png" width="40%">
 
---
+---
 
 ### Vary $t$
 
 <img src="img/isingpdvt.png" width="42.5%">
 <img src="img/secondorderising.png" width="40%">
 
---
+---
 
 ### Magnetic equation of state
 
@@ -149,16 +149,17 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 </div>
 
 </div>
+
 - Scaling form of ${\color{Emerald} \text{magnetic equation of state}}$ ($\beta = 1/2, \delta=3$)
   $${\color{Emerald} f_G} ( {\color{red}{z}}  + {\color{Emerald}f_G}^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } }$$
---
+---
 
 ### Yang-Lee edge singularity
 
 <img src="img/fg3d.png">
 
 
---
+---
 
 ### Near YLE singularity:  $\frac{\partial^2 F}{\partial \phi^2} = 0 $
 
@@ -187,13 +188,15 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
  <p class="fragment fade-in" data-fragment-index="2"> 1 independent crit. exp., c.f.  standard critical point with 2 independent crit. exp. </p>
 
---
+---
 
 
 ### Illustration in Ising model: $h_c(t) = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
 
-<img src="img/complexfg.png"  width=46.5%>
-<img src="img/complexfgBM.png"  width=45%>
+<div class="r-stack">
+<img class="fragment fade-out" data-fragment-index="0" src="img/complexfg.png"  width=40.5%>
+<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=39%>>
+</div>
 
 <div class="cite">
 F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
@@ -202,6 +205,26 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 - In contrast to the critical point, YLEs form lines
 - YLEs are continuously connected to critical point
 - On YLE lines, the mass of the critical  mode  is zero 
+
+---
+
+### Do YLEs always connect to finite $T$ crit. points? 
+
+Counter example: one dimensional Ising model ($\hat h = h/T$, $\hat J = J /T$) 
+
+$$ 
+      f = - \lim_{L\to \infty} \frac{T}{L} \ln Z = -  T \ln \left( e^{\hat J} \cosh(\hat h) + \sqrt{ e^{2\hat J} \sinh^2(\hat h) + e^{-2\hat J}  } \right), 
+$$ 
+
+with YLE at 
+
+$$
+    h_c = \pm i T \arcsin e^{-2\hat J}
+$$
+
+Two YLEs pinch the real $h$ axis at $T=0$ 
+
+
 
 
 ---
@@ -221,7 +244,7 @@ F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
   - lattice
 
 
---
+---
 
 ###  $\varepsilon$-expansion to locate YLE  ⛔
      
@@ -253,7 +276,7 @@ $$
 
 
 
---
+---
 
 ### Lattice  ⛔
      
@@ -265,7 +288,7 @@ $$
 <div class="cite"> E.g.  through Schofield representation in  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
 
 
---
+---
 
 
 FRG approach is <!-- .element: class="r-fit-text" -->
@@ -274,7 +297,7 @@ uniquely  suited <!-- .element: class="r-fit-text" -->
 
 for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
 
---
+---
 
 ### FRG ✅ 
 
@@ -316,7 +339,7 @@ for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
 
 
 
---
+---
 
 
 ### Truncation: derivative expansion
@@ -347,7 +370,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 </div>
 
 
---
+---
 
 ### Truncation: series expansion
 
@@ -367,7 +390,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 - Uncertainty due to the truncation dependence ($\Delta_{trunc}$) is estimated by the maximum of the differences between  $|\zeta_c|$  computed at orders $(12,6) - (10,6)$ and   $(12,6) - (12,4)$  
 
 
---
+---
 ### After the truncation 
 
 - 18-26 coupled stiff differential equations
@@ -379,7 +402,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
   - Months on an HPC
 
 
---
+---
 ### Regulator dependence \& minimal sensitivity 1
 
 - To estimate the systematic uncertainty of truncations:  include  a free parameter in the regulator 
@@ -396,7 +419,7 @@ $\Delta = \beta \delta$ is the gap critical exponent (defines the phase of $z_c$
 </div>
 
 
---
+---
 
 ### Regulator dependence \& minimal sensitivity 2
 
@@ -416,7 +439,7 @@ $\Delta = \beta \delta$ is the gap critical exponent (defines the phase of $z_c$
 - Uncertainty due to the regulator dependence ($\Delta_{reg}$) is estimated by the difference between  $|\zeta_c|$  computed at $a_\\Delta$ and $a_h$ 
 
 
---
+---
 
 ### Results: importance of fluctuations ($N$=1)
 
@@ -477,7 +500,7 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 
 
---
+---
 
 
 ### Analytic structure in QCD: $T\to T_c$
@@ -488,7 +511,7 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 
 
---
+---
 
 
 ### Analytic structure in QCD: $T\to T_{RW}$
@@ -551,7 +574,7 @@ $$
 T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$ 
 </div>
 
---
+---
 
 ### Taking it further 
 
@@ -583,7 +606,7 @@ $$
 <div class="cite">
  M. Bryant, C. Schmidt, V. S., 2401.06489 
 </div>
---
+---
 
 ### Fourier coefficients
 
