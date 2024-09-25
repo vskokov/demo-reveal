@@ -15,19 +15,22 @@ North Carolina state University
 ## Outline
 
 - Introduction: what is Yang-Lee Edge (YLE) singularity?
-  - Second order phase transition 
+<!--  - Second order phase transition 
   - Universal magnetic equation of state 
   - Analytic structure near a critical point
   - YLE and spinodals
   - Why no results on YLE for about five decades? 
+-->
 
 - Universal location of YLE for  most relevant universality classes 
-  - FRG to locate YLE 
+<!--  - FRG to locate YLE 
   - Analysis of systematic uncertainty 
+-->
 
 - Tracing YLE in QCD 
-  - Roberge-Weiss phase transition 
+<!--  - Roberge-Weiss phase transition 
   - Critical end point 
+-->
 
 - Conclusions 
 
