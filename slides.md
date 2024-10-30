@@ -69,16 +69,33 @@ d=2:  H.-L. Xu and A. Zamolodchikov\\  JHEP 08 (2022) 057 (2022)
 
 ---
 
+### Quantum Chromodynamics
+
+## <img src="img/img-29-1.jpg" width="45%">
+
+Quarks and gluons are building blocks of most of the visible mass in the
+Universe <!-- .element: class="r-fit-text" -->
+
+---
+
+### Relativistic Heavy-Ion collider
+
+## <img src="img/BNL.png" width="55%">
+
+---
+
+### Heavy-Ion collision
+
+## <img src="img/RHIChot.jpeg" width="80%">
+
+---
+
 ### QCD phase diagram
-
-- This talk is about universal properties near a second order phase transition
-
-- Motivation: QCD phase diagram
 
 <img src="img/phase.png" width="55%">
 
 The only phase diagram of Standard Model of fundamental particles that can be
-studied in laboratory
+studied in laboratory <!-- .element: class="r-fit-text" -->
 
 ---
 
@@ -88,31 +105,58 @@ studied in laboratory
 
 <div class="col" data-markdown>
 
-- Lattice MC is one of the leading methods to study QCD
+- Lattice Monte-Carlo is one of the leading methods to study QCD
 
 - Sign problem limits utility of the method to zero _real_ baryon chemical
   potential:
 
   - Taylor series expansion at $\mu_B =0$
-  - Calculations at purely imaginary $\mu_B$
 
 - To learn about _real_ baryon chemical potential: analytic continuation
 
-</div>
-
-<div class="col" data-markdown>
-
-<img  src="img/qcdpd.png" width="70%">
-
-</div>
-
-</div>
-
-- Analytic continuation requires knowledge of analytic structure
+  - Analytic continuation requires knowledge of analytic structure
 
 - Reversely, analytic structure can help reveal QCD phase structure
 
-- Thus, there is an important question to consider
+---
+
+### Taylor series expansion
+
+$$
+ f(x) = \sum_{i=0}^{\infty} \frac{1}{i!}  f^{(i)}(0) x^{i}
+$$
+
+- What limits the range of $x$?
+
+--
+
+$$
+ f(x) = \sum_{i=0}^{\infty} \frac{1}{i!}  f^{(i)}(0) x^{i}
+$$
+
+- What limits the range of $x$?
+
+<img src="img/func.png" style="background-color:white;"  width="35%">
+
+--
+
+$$
+ f(x) = \sum_{i=0}^{\infty} \frac{1}{i!}  f^{(i)}(0) x^{i}
+$$
+
+- What limits the range of $x$?
+
+<img src="img/expans.png" style="background-color:white;"  width="35%">
+
+--
+
+$$
+ f(x) = \sum_{i=0}^{\infty} \frac{1}{i!}  f^{(i)}(0) x^{i}
+$$
+
+- What limits the range of $x$?
+
+<img src="img/func3d.png" style="background-color:white;"  width="35%">
 
 ---
 
@@ -122,37 +166,56 @@ studied in laboratory
 
 ---
 
+### Are they universal?! <!-- .element: class="r-fit-text" -->
+
+---
+
+### Universality
+
+- Divergent $\xi$: a large number of degrees of freedom are strongly correlated;
+  perturbative methods fail
+
+- Divergent $\xi$: no sensitivity to microscopic details $\leadsto$ universality
+
+- Divergent $\xi$: the only relevant features are
+
+  - number of dimension
+  - global symmetry
+
+<img src="img/Univ.png" style="background-color:white;"  width="35%">
+
+---
+
 ### Second-order phase transition: Landau model
 
-- To set up the stage, introduce notation and relevant concepts, best to
-  consider Landau model
+- L. Landau (1937): Phase transitions $\equiv$ manifestations of broken
+  symmetry;
+
+- Generalized order parameter measures symmetry breaking
 
 `\[ F = \int d^{d} x \left(  \frac{1}{2} {\color{red} t} \phi^2 + \frac{1}{4}  \lambda \phi^4 - {\color{blue} h} \phi   \right) \]`
 
-E.g.:
+Order parameters $\phi$:
 
-- near chiral limit: ${\color{red} t} \propto T-T_c + \kappa \mu^2$,
-  ${\color{blue} h}\propto m_{u,d}$
-- near CP:
-  ${\color{red}t},{\color{blue}h} \propto \alpha_{t,h}(T-T_c) + \beta_{t,h} (\mu-\mu_c)$
-- near RW: ${\color{red}t} \propto T-T_{RW}$,
-  ${\color{blue}h}\propto \mu_B - i \pi T$
+- Ferromagnet $\leadsto$ magnetization
+- Fluid $\leadsto$ density of gas - density of fluid
+- Confinement in Yang-Mills theory $\leadsto$ Polyakov loop
 
----
+--
 
 ### Vary $h$
 
 <img src="img/isingvh.png" width="42.5%">
 <img src="img/firstorderising.png" width="40%">
 
----
+--
 
 ### Vary $t$
 
 <img src="img/isingpdvt.png" width="42.5%">
 <img src="img/secondorderising.png" width="40%">
 
----
+--
 
 ### Magnetic equation of state
 
@@ -185,7 +248,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
   ($\beta = 1/2, \delta=3$)
   $${\color{Emerald} f_G} ( {\color{red}{z}}  + {\color{Emerald}f_G}^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } }$$
 
----
+--
 
 ### Yang-Lee edge singularity
 
@@ -227,7 +290,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 <div class="r-stack">
 <img class="fragment fade-out" data-fragment-index="0" src="img/complexfg.png"  width=40.5%>
-<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=39%>>
+<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=39%>
 </div>
 
 <div class="cite">
