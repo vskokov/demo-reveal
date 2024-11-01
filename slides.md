@@ -1,6 +1,6 @@
-# Yang-Lee edge singularity <!-- .element: class="r-fit-text" -->
+# Universality Frontier: <!-- .element: class="r-fit-text" -->
 
-# with functional renormalization group <!-- .element: class="r-fit-text" -->
+Yang-Lee edge singularity <!-- .element: class="r-fit-text" -->
 
 Vladi Skokov
 
@@ -11,22 +11,19 @@ North Carolina state University
 ## Outline
 
 - Introduction: what is Yang-Lee Edge (YLE) singularity?
-<!--  - Second order phase transition
+  - Second order phase transition
   - Universal magnetic equation of state
   - Analytic structure near a critical point
   - YLE and spinodals
   - Why no results on YLE for about five decades?
--->
 
 - Universal location of YLE for most relevant universality classes
-<!--  - FRG to locate YLE
+  - FRG to locate YLE
   - Analysis of systematic uncertainty
--->
 
 - Tracing YLE in QCD
-<!--  - Roberge-Weiss phase transition
+  - Roberge-Weiss phase transition
   - Critical end point
--->
 
 - Conclusions
 
@@ -37,9 +34,12 @@ North Carolina state University
 ### Decades of research revealed a detailed portrait of a second-order phase transition
 
 - Critical exponents: $\alpha, \beta, \gamma, \delta, \eta, \nu, \omega$
-
-Approximate timeline:
-$\beta (\text{vdW}) = 1/2, \quad  \beta (1972) = 1/3, \quad \beta (1981) = 0.327(5), \quad \ldots, \beta (2015) = 0.326419(3)$
+    Approximate timeline:
+  - $\beta (\text{vdW}) = 1/2$
+  - $\beta (1972) = 1/3$
+  - $\beta (1981) = 0.327(5)$
+  - $\ldots$
+  - $\beta (2015) = 0.326419(3)$
 
 - Critical amplitudes: $U_0$, $U_2$, $U_4$, $R^\pm_c$,$R^\pm_4$,
   $\underbrace{R_\chi,\ldots}_{~19}$
@@ -286,7 +286,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 ---
 
-### Illustration in Ising model: $h_c(t) = i |z_c|^{-\beta \delta} t^{\beta \delta}$
+### Illustration for Ising universality class: $h_c(t) = i |z_c|^{-\beta \delta} t^{\beta \delta}$
 
 <div class="r-stack">
 <img class="fragment fade-out" data-fragment-index="0" src="img/complexfg.png"  width=40.5%>
@@ -334,7 +334,7 @@ Two YLEs pinch the real $h$ axis at $T=0$
 
   - lattice
 
----
+--
 
 ### $\varepsilon$-expansion to locate YLE ⛔
 
@@ -365,7 +365,7 @@ $$
 (N+8)}\epsilon \right] + \epsilon^2 \log \epsilon \times  ( \text{all loops} )
 $$
 
----
+--
 
 ### Lattice ⛔
 
@@ -377,7 +377,7 @@ $$
 </p>
 <div class="cite"> E.g.  through Schofield representation in  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
 
----
+--
 
 FRG approach is <!-- .element: class="r-fit-text" -->
 
@@ -406,7 +406,7 @@ for locating YLE ✅ <!-- .element: class="r-fit-text" -->
 - As a bonus: calculations are possible at any $d$ and $N$ (including
   non-integer).
 
----
+--
 
 ### Functional/Exact Renormalization Group
 
@@ -424,7 +424,7 @@ for locating YLE ✅ <!-- .element: class="r-fit-text" -->
 
 <div class="cite"> Wetterich, 1993</div>
 
----
+--
 
 ### Truncation: derivative expansion
 
@@ -453,7 +453,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 116013
 </div>
 
----
+--
 
 ### Truncation: series expansion
 
@@ -472,7 +472,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
   by the maximum of the differences between $|\zeta_c|$ computed at orders
   $(12,6) - (10,6)$ and $(12,6) - (12,4)$
 
----
+--
 
 ### After the truncation
 
@@ -484,7 +484,7 @@ G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
 
   - Months on an HPC
 
----
+--
 
 ### Regulator dependence \& minimal sensitivity 1
 
@@ -501,7 +501,7 @@ $$
 $\Delta = \beta \delta$ is the gap critical exponent (defines the phase of $z_c$)
 </div>
 
----
+--
 
 ### Regulator dependence \& minimal sensitivity 2
 
@@ -520,7 +520,7 @@ $\Delta = \beta \delta$ is the gap critical exponent (defines the phase of $z_c$
 - Uncertainty due to the regulator dependence ($\Delta_{reg}$) is estimated by
   the difference between $|\zeta_c|$ computed at $a_\\Delta$ and $a_h$
 
----
+--
 
 ### Results: importance of fluctuations ($N$=1)
 
@@ -531,7 +531,7 @@ F. Rennecke and V. S, Annals Phys. 444 (2022) 169010
 
 </div>
 
----
+--
 
 ### Results: Ising universality class $N=1$
 
@@ -541,7 +541,7 @@ $d$ does not have to be integer in FRG
 
 | d                                            | 1   | 2          | 3        | 4           |
 | -------------------------------------------- | --- | ---------- | -------- | ----------- |
-| $ \| z*c \| /R\_\chi^{1/\gamma} (N*{trunc})$ | 1   | 1.32504(2) | 1.621(4) | $3/2^{2/3}$ |
+| $ \|z_c\| /R_\chi^{1/\gamma}\quad (N_{trunc})$ | 1   | 1.32504(2) | 1.621(4) | $3/2^{2/3}$ |
 
 <div class="cite">
 G. Johnson, F. Rennecke, and V. S, Phys.Rev.D 107 (2023) 11,
@@ -554,7 +554,7 @@ Zamolodchikov, 2304.07886
 
 </div>
 
----
+--
 
 ### Arbitrary $N$, $d=3$
 
@@ -562,7 +562,7 @@ Zamolodchikov, 2304.07886
 
 | N                                                       | 1           | 2           | 3           | 4           |
 | ------------------------------------------------------- | ----------- | ----------- | ----------- | ----------- |
-| $ \| z*c \| /R\_\chi^{1/\gamma} (N*{trunc}) (N\_{reg})$ | 1.621(4)(1) | 1.612(9)(0) | 1.604(7)(0) | 1.597(3)(0) |
+| $ \| z_c \| /R_\chi^{1/\gamma} (N_{trunc}) (N_{reg})$ | 1.621(4)(1) | 1.612(9)(0) | 1.604(7)(0) | 1.597(3)(0) |
 
 <div class="cite">
 G. Johnson, F. Rennecke, and V. S, Phys.Rev.D 107 (2023) 11,
@@ -577,19 +577,19 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 <img src="img/YLEs.png" height=500em >
 
----
+--
 
 ### Analytic structure in QCD: $T\to T_c$
 
 <img src="img/YLEtoTc.png" height=500em >
 
----
+--
 
 ### Analytic structure in QCD: $T\to T_{RW}$
 
 <img src="img/YLEtoRW.png" height=500em >
 
----
+--
 
 ### Tracing YLE singularity: RW critical point
 
@@ -607,7 +607,7 @@ $$
 Christian Schmidt, et. al., 2401.07790
 </div>
 
----
+--
 
 ### Tracing YLE singularity: chiral critical point
 
@@ -647,12 +647,13 @@ T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$
   - YLE defines the behavior of the higher order Taylor expansion coefficients
     (Darboux's theorem). E.g. for of $f_G(z)$:
 
-        <div class="smallmath">
-        $$
+    <div class="smallmath">
+
+    $$
         f_G^{(n)} \sim 2 B_0 {\red{|z_c|}}^{-n} \frac{n^{ \red \sigma -1 }}{\Gamma(\red \sigma  )}  \cos \left(\beta_0 - {\red{\frac{\pi n}{2\beta \delta}}  } \right),
         \quad B_0 \exp (i \beta_0) = \lim\limits_{z\to z_c}  \frac{ f_G(z)-f_G(z_c)}
         {(1-z/z_c)^{\sigma} }
-        $$
+    $$
 
     </div>
 
