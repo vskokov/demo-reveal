@@ -1,3 +1,5 @@
+# Universal location of   <!-- .element: class="r-fit-text" -->
+
 # Yang-Lee edge singularity <!-- .element: class="r-fit-text" -->
 
 # with functional renormalization group  <!-- .element: class="r-fit-text" -->
@@ -198,7 +200,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 <div class="r-stack">
 <img class="fragment fade-out" data-fragment-index="0" src="img/complexfg.png"  width=40.5%>
-<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=39%>>
+<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=39%>
 </div>
 
 <div class="cite">
