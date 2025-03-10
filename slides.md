@@ -1,8 +1,7 @@
-# Universal location of   <!-- .element: class="r-fit-text" -->
+# Yang-Lee edge singularity 
 
-# Yang-Lee edge singularity <!-- .element: class="r-fit-text" -->
+# with Functional RG 
 
-# with functional renormalization group  <!-- .element: class="r-fit-text" -->
 
 Vladi Skokov
 
@@ -10,88 +9,52 @@ North Carolina state University
 
 
 
-
-
 ---
 
-## Outline
 
-- Introduction: what is Yang-Lee Edge (YLE) singularity?
-<!--  - Second order phase transition 
-  - Universal magnetic equation of state 
-  - Analytic structure near a critical point
-  - YLE and spinodals
-  - Why no results on YLE for about five decades? 
--->
+### Phase diagram of Ising model near critical point  
 
-- Universal location of YLE for  most relevant universality classes 
-<!--  - FRG to locate YLE 
-  - Analysis of systematic uncertainty 
--->
-
-- Tracing YLE in QCD 
-<!--  - Roberge-Weiss phase transition 
-  - Critical end point 
--->
-
-- Conclusions 
-
-
----
-
-### QCD phase diagram 
-
-- This talk is about universal properties near a second order phase transition 
-
-- Motivation: QCD phase diagram
-
-<img src="img/phase.png" width="55%">
-
-The only phase diagram of Standard Model of fundamental particles that can be studied in laboratory  
-
----
-
-### Analytic continuation 
-
-
-<div class="container">
-
-<div class="col" data-markdown>
-
-- Lattice MC is one of the leading methods to study QCD
-
-- Sign problem limits utility of the method to zero _real_ baryon chemical potential:
-  - Taylor series expansion at $\mu_B =0$ 
-  - Calculations at purely imaginary $\mu_B$ 
-
-
-- To learn about _real_ baryon chemical potential: analytic  continuation
+<div class="r-stack">
+<img class="fragment fade-out" data-fragment-index="0" src="img/complexfg.png"  width=45.5%>
+<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=43%>
 </div>
 
-<div class="col" data-markdown>
-
-<img  src="img/qcdpd.png" width="70%">
-
+<div class="cite">
+F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
 </div>
 
-</div>
-
-
-- Analytic continuation requires  knowledge of analytic structure 
-
-- Reversely, analytic structure can help reveal QCD phase structure 
-
-- Thus, there is an important question to consider
-
+- All curves in this plot are defined by zero mass of order parameter    
+- YLEs: solid <span style="color:  red;">  red lines </span>; Their continuation to $t<0$, spinodals: <span style="color: blue;">  dashed blue line(s) </span>
 
 
 
 ---
 
-### Are there singularities  associated <!-- .element: class="r-fit-text" -->
+### Motivation to study YLE singularities:  
+### they are continuously connected to 
+### the critical point 
 
 
-###  with critical point/phase transitions?  <!-- .element: class="r-fit-text" -->
+---
+
+### Do YLEs always connect to finite $T$ crit. points? 
+
+Counter example: one dimensional Ising model ($\hat h = h/T$, $\hat J = J /T$) 
+
+$$ 
+      f = - \lim_{L\to \infty} \frac{T}{L} \ln Z = -  T \ln \left( e^{\hat J} \cosh(\hat h) + \sqrt{ e^{2\hat J} \sinh^2(\hat h) + e^{-2\hat J}  } \right), 
+$$ 
+
+with YLE (zero mass) at 
+
+$$
+    h_c = \pm i T \arcsin e^{-2\hat J}
+$$
+
+Two YLEs pinch the real $h$ axis at $T=0$ 
+
+* <span style="color: orange;">YLEs connect to a critical point, but not always at non-zero $T$ </span>
+
 
 
 ---
@@ -157,11 +120,17 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 - Scaling form of ${\color{Emerald} \text{magnetic equation of state}}$ ($\beta = 1/2, \delta=3$)
   $${\color{Emerald} f_G} ( {\color{red}{z}}  + {\color{Emerald}f_G}^2) = 1, \quad {\color{red}{ z  =  {\frac{t}{ h^{\frac1{\beta \delta}} }} } }$$
+
+
+
 ---
 
 ### Yang-Lee edge singularity
 
 <img src="img/fg3d.png">
+
+
+
 
 
 ---
@@ -185,52 +154,6 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 </div>
 
----
-
-| Type of critical point:       | <p class="fragment fade-in" data-fragment-index="2"> ${\color{red} \text{protocritical = YLE}}$ </p> | critical | tricritical |
-| ----------------------------- | ----------------------------------------------------------------------------- | -------- | ----------- |
-| Number of relevant variables: | <p class="fragment fade-in" data-fragment-index="1">  1              | 2        | 4           |
-
- <p class="fragment fade-in" data-fragment-index="2"> 1 independent crit. exp., c.f.  standard critical point with 2 independent crit. exp. </p>
-
----
-
-
-### Illustration in Ising model: $h_c(t) = i |z_c|^{-\beta \delta} t^{\beta \delta}$  
-
-<div class="r-stack">
-<img class="fragment fade-out" data-fragment-index="0" src="img/complexfg.png"  width=40.5%>
-<img class="fragment  current-visible" data-fragment-index="0"  src="img/complexfgBM.png"  width=39%>
-</div>
-
-<div class="cite">
-F. Rennecke, G. Johnson, and V.S.,     Phys.Rev.D 107 (2023) 11, 116013
-</div>
-
-- In contrast to the critical point, YLEs form lines
-- YLEs are continuously connected to critical point
-- On YLE lines, the mass of the critical  mode  is zero 
-
----
-
-### Do YLEs always connect to finite $T$ crit. points? 
-
-Counter example: one dimensional Ising model ($\hat h = h/T$, $\hat J = J /T$) 
-
-$$ 
-      f = - \lim_{L\to \infty} \frac{T}{L} \ln Z = -  T \ln \left( e^{\hat J} \cosh(\hat h) + \sqrt{ e^{2\hat J} \sinh^2(\hat h) + e^{-2\hat J}  } \right), 
-$$ 
-
-with YLE at 
-
-$$
-    h_c = \pm i T \arcsin e^{-2\hat J}
-$$
-
-Two YLEs pinch the real $h$ axis at $T=0$ 
-
-
-
 
 ---
 
@@ -247,60 +170,13 @@ Two YLEs pinch the real $h$ axis at $T=0$
   - $\varepsilon$-expansion 
 
   - lattice
-
-
----
-
-###  $\varepsilon$-expansion to locate YLE  ⛔
-     
-
-
- - Ordinary, $\varepsilon$-expansion is equivalent to  loop expansion; e.g.    
-    $$
-      \beta = \frac{1}{2} + \frac{1}{6} \varepsilon  + \frac{1}{162} \varepsilon^2 + \frac{1}{2} \left( \frac{163}{8748} - \frac{2}{27} \zeta(3) \right) \varepsilon^3 + {\cal O}(\varepsilon^4), \quad \epsilon = 4 - d 
-    $$
-
-- Ginzburg-Landau theory near YLE: $\phi = \phi_{\rm YLE} + \varphi$: 
-
-$$ L \approx (\nabla \varphi)^2  - \lambda \phi_{\rm YLE}\   {\color{red}\varphi^3}   - H \varphi   $$
-
-
-- YLE is described by ${\color{red}\varphi^3}$ with upper critical dimension ${\color{red} d_c=6}$, </br> 
- while underlying universality class  ($\phi^4$) has $d_c=4$
-<div class="cite"> M. Fisher, “Yang-Lee Edge Singularity and φ3 Field Theory”, Phys. Rev. Lett. 40 1610 (1978) </div>
-
-- Only *leading correction* is under perturbative control; </br> 
-expansion in $\varepsilon \ne$ expansion in loops 
-
-$$
-|z_c| \approx  |z_c^{\rm MF}| \left[1 +  \frac{ 27 \ln \left(\frac{3}{2}\right) -  (N-1)  \ln 2}{9
-(N+8)}\epsilon \right] + \epsilon^2 \log \epsilon \times  ( \text{all loops} ) 
-$$
-
-
-
-
-
----
-
-### Lattice  ⛔
-     
-- Direct calculations at complex values of parameters are impossible
-    due to sign problem
-- Indirectly lattice can provide information about YLE through analytic continuation 
-
-</p>    
-<div class="cite"> E.g.  through Schofield representation in  F. Karsch, C. Schmidt, S. Singh, 2311.13530 </div>
-
+  
+  - both of them fail 
 
 ---
 
 
-FRG approach is <!-- .element: class="r-fit-text" -->
-
-uniquely  suited <!-- .element: class="r-fit-text" -->
-
-for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
+FRG approach is uniquely  suited for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
 
 ---
 
@@ -341,119 +217,6 @@ for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
 
 <div class="cite"> Wetterich, 1993</div>
 
-
-
-
----
-
-
-### Truncation: derivative expansion
-
-Wave function renormalization:
-
-$$
-\begin{aligned}
- \partial_t Z_{\parallel}(\phi) &= \int \bar d^d q \partial_t R_k(q^2) \Bigg\\{ G_\parallel^2 \Big[ \gamma_\parallel^2 \big(G_\parallel' + 2 G_\parallel'' \frac{q^2}{d}\big) 2 \gamma_\parallel Z_\parallel'(\phi) \big(G_\parallel + 2 G_\parallel' \frac{q^2}{d}\big) \\\\
-& + (Z_\parallel'(\phi))^2 G_\parallel \frac{q^2}{d} \frac12 Z''_\parallel(\phi) \Big]
-\\\\ & + (N-1) G^2\_{\perp} \Big[ \gamma_\perp^2 \big(G_\perp' + 2 G_\perp'' \frac{q^2}{d}\big) 4 \gamma_\perp Z_\perp'(\phi)  G_\perp' \frac{q^2}{d} (Z_\perp'(\phi))^2 G_\perp \frac{q^2}{d}
-\\\\ &+  2 \frac{Z_\parallel(\phi)-Z_\perp(\phi)}{\phi} \gamma_\perp G_\perp \frac12 \left(\frac{1}{\phi}Z'_\parallel(\phi) \frac{2}{\phi^2} (Z_\parallel-Z_\perp) \right) \Big] \Bigg\\}
-\end{aligned}
-$$
-
-<div class="smallmath">
-
-with
-$
-\gamma_\parallel = q^2 Z_\parallel'(\phi) + U^{(3)}(\phi),  \quad \gamma_\perp = q^2 Z_\perp'(\phi) + \frac{\partial}{\partial \phi} \left( \frac{1}{\phi}U' (\phi) \right), \quad G' = \frac{\partial G} {\partial q^2}, \ldots
-$
-
-</div>
-
-<div class="cite">
-G. Johnson, F. Rennecke, and V.S., Phys.Rev.D 107 (2023) 11,
-116013
-</div>
-
-
----
-
-### Truncation: series expansion
-
-- Taylor series expansion of $U_k(\phi)$ and $Z_k(\phi)$ truncated at  $(N_U, N_Z) = (12,6)$
-
-  - Usually: expansion near $k$-dependent minimum: $U_k'[\phi_k] = h =$
-    const.
-
-  - To locate YLE: expand near $U_k''[\phi_k] = m^2 \to 0$.
-
-    $\leadsto$ $U_k'[\phi_k] = h_k \ne$ const
-
-    $\leadsto$ Calculations in the broken phase are not feasible
-
-
-
-- Uncertainty due to the truncation dependence ($\Delta_{trunc}$) is estimated by the maximum of the differences between  $|\zeta_c|$  computed at orders $(12,6) - (10,6)$ and   $(12,6) - (12,4)$  
-
-
----
-### After the truncation 
-
-- 18-26 coupled stiff differential equations
-
-  - Mathematica to obtain equations (multiple Gb)
-
-  - Implicit solvers for ODE's
-
-  - Months on an HPC
-
-
----
-### Regulator dependence \& minimal sensitivity 1
-
-- To estimate the systematic uncertainty of truncations:  include  a free parameter in the regulator 
-
-$$
-    R_k(q^2) = {\color{red} a} Z^{\\|}_k (k^2 - q^2) \theta(k^2-q^2)
-$$
-
-
-<img src="img/msa.png" width=100% >
-
-<div class="smallmath">
-$\Delta = \beta \delta$ is the gap critical exponent (defines the phase of $z_c$)
-</div>
-
-
----
-
-### Regulator dependence \& minimal sensitivity 2
-
-- $a_\\Delta$ and $a_\eta$ might not be the most crucial as long as $|z_c|$ is concerned 
-
-- Additionally, we perform minimal sensitivity analysis for  $h_c$ ($z_c = t / h_c^{1/\Delta}$) 
-
-
-| N                              | 1      | 2       | 3      | 4      |
-| ---- | ------ | ------- | ------ | ------ |
-| $a_\\Delta$                       | 0.5108 |  0.5069 | 0.5026 | 0.5044 |
-| $a_\\eta$                         | 0.5044 | 0.5075 | 0.5064 | 0.4906  |
-| $a_h$                            | 0.6299 | 0.5921   | 0.5724  | 0.5617 |
-
-
-
-- Uncertainty due to the regulator dependence ($\Delta_{reg}$) is estimated by the difference between  $|\zeta_c|$  computed at $a_\\Delta$ and $a_h$ 
-
-
----
-
-### Results: importance of fluctuations ($N$=1)
-
-<img src="img/etaevo.png" width=65% >
-
-<div class="cite">
-F. Rennecke and V. S, Annals Phys. 444 (2022) 169010
-
-</div>
 
 ---
 
@@ -524,102 +287,6 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 <img src="img/YLEtoRW.png" height=500em >
 
-
-
-
-
-
----
-### Tracing YLE singularity: RW critical point 
-
-
-Lattice QCD and indirect methods to locate YLE: 
-
-input from  Im $\mu$  \& analytic continuation 
-
-
-<img src="img/RW_YLE.png" height=350em >
-
-$$
-  z = z_c \to \text{Re} \mu_{YLE} \propto (T_{RW}-T)^{\beta \delta} \quad \leadsto T_{RW} = 211.1 \pm 3.1 \text{MeV}.
-$$
-
-<div class="cite">
-Christian Schmidt, et. al., 2401.07790
-</div>
-
-
-
----
-### Tracing YLE singularity: chiral critical point  
-
-
-Lattice input from Taylor series coeff. at $\mu=0$ or  Im $\mu$  \&  analytic continuation 
-
-<div class="r-stack">
-
-<div class="fragment fade-out"  data-fragment-index="1"  >
-<img src="img/BasarYLE.png" height=350em >
-<img src="img/LatticeYLElocation.png" height=350em >
-<div class="cite">
-G. Basar, 2312.06952 <br>
-D. Clarke et. al., 2405.10196
-</div>
-</div>
-<img class="fragment current-visible" data-fragment-index="1" src="img/clarke.png" height=350em >
-</div>
-
-
-
-<div class=smallmath>
-$$ z=z_c \to \text{Re} (\mu-\mu_c) = c_1 (T-T_c) + c_2 (T-T_c)^2  \text{ and }  \text{Im} \mu = c_3 (T-T_c)^{\beta\delta}
-$$
-$$
-\leadsto 
-T_c \approx 110 \text{ MeV} , \mu_c \approx 650 \text{ MeV}$$ 
-</div>
-
----
-
-### Taking it further 
-
-- Properties of YLE, e.g. $\sigma_{\rm YLE}$ can be use to validate indirect
-  methods of locating YLE in QCD, e.g. volume scaling of the density of zeros
-
-- Moreover,
-
-  - YLE defines the behavior of the higher order Taylor expansion coefficients
-    (Darboux's theorem). E.g. for of $f_G(z)$:
-
-    <div class="smallmath">
-    $$
-    f_G^{(n)} \sim 2 B_0 {\red{|z_c|}}^{-n} \frac{n^{ \red \sigma -1 }}{\Gamma(\red \sigma  )}  \cos \left(\beta_0 - {\red{\frac{\pi n}{2\beta \delta}}  } \right),
-    \quad B_0 \exp (i \beta_0) = \lim\limits_{z\to z_c}  \frac{ f_G(z)-f_G(z_c)}
-    {(1-z/z_c)^{\sigma} }
-    $$
-</div>
-
-  - Fourier coefficients are exponentially sensetive to YLE
-
-    $$
-    b_{k\gg1} \approx \|\tilde A_{\rm YLE}\| \frac{e^{-\hat \mu_r^{\rm YLE} k }}{k^{1+\sigma}} \cos(\hat \mu_i^{\rm YLE} k + \phi^{\rm YLE}_a)
-    $$
-
-$$
-     +\|\hat A_{\rm RW}\|  (-1)^k \frac{e^{-\hat \mu_r^{\rm RW} k }}{k^{1+\sigma}}
-    $$
-<div class="cite">
- M. Bryant, C. Schmidt, V. S., 2401.06489 
-</div>
----
-
-### Fourier coefficients
-
-<img src="img/FTfits.png" height=350em >
-
-<div class="cite">
- M. Bryant, C. Schmidt, V. S., 2401.06489 
-</div>
 
 
 ---
