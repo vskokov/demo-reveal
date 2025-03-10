@@ -287,8 +287,6 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 <img src="img/YLEtoRW.png" height=500em >
 
-
-
 ---
 
 ### Conclusions
