@@ -75,20 +75,6 @@ E.g.:
 
 ---
 
-### Vary $h$
-
-<img src="img/isingvh.png" width="42.5%">
-<img src="img/firstorderising.png" width="40%">
-
----
-
-### Vary $t$
-
-<img src="img/isingpdvt.png" width="42.5%">
-<img src="img/secondorderising.png" width="40%">
-
----
-
 ### Magnetic equation of state
 
 `\[ F = \int d^{d} x \left(  \frac{1}{2} t \phi^2 + \frac{1}{4}  \lambda \phi^4 - h \phi   \right) \]`
@@ -112,7 +98,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 <div class="col" data-markdown>
 
-<img class="fragment fade-in"  data-fragment-index="1"  src="img/meos.png" width="70%">
+<img class="fragment fade-in"  data-fragment-index="1"  src="img/meos.png" width="65%">
 
 </div>
 
@@ -175,13 +161,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 ---
 
-
-FRG approach is uniquely  suited for locating YLE  ✅   <!-- .element: class="r-fit-text" -->
-
----
-
 ### FRG ✅ 
-
 
 - No sign problem 
 - Non-perturbative 
@@ -189,7 +169,7 @@ FRG approach is uniquely  suited for locating YLE  ✅   <!-- .element: class="r
 - Validated by computing critical exponents and amplitude ratios
 
 | $N=1, d=3$  | $\nu$        | $\eta$ |
-|---|-------------|--|            
+| --- | ---------- | -- |            
 |FRG|0.63012(16)   | 0.0361(11) | 
 |CB|         0.629971(4)      | 0.0362978(20) |
 
@@ -197,26 +177,6 @@ FRG approach is uniquely  suited for locating YLE  ✅   <!-- .element: class="r
 <div class="cite"> G. De Polsi, G. Hernández-Chifflet, N. Wschebor, 2109.14731   </div>
 
 - As a bonus: calculations are possible at any $d$ and $N$ (including non-integer). 
-
-
----
-
-### Functional/Exact Renormalization Group
-
-- Start with bare classical action at small distances/large momentum
-  $S_{k=\Lambda}$
-- Gradually include fluctuations of larger size/smaller momentum
-- Continue until fluctuations of all possible sizes/momenta are accounted for
-
-<img src="img/frg.png" width=15% >
-
-- Equation that does it: Functional Renormalization Group equation
-  $$
-  \partial_k \Gamma_{k}[\phi] = \frac{1}{2} {\rm STr} \Big[ \big( \Gamma^{(2)}_{k}[\phi] + R_k \big)^{-1} \cdot \partial_k R_k  \Big]
-  $$
-
-<div class="cite"> Wetterich, 1993</div>
-
 
 ---
 
@@ -229,6 +189,7 @@ $d$ does not have to be integer in FRG
 | d                                | 1   | 2          | 3        | 4           |
 | -------------------------------- | --- | ---------- | -------- | ----------- |
 | $ \| z_c \| /R\_\chi^{1/\gamma} (N_{trunc})$ | 1   | 1.32504(2) | 1.621(4) | $3/2^{2/3}$ |
+
 
 <div class="cite">
 G. Johnson, F. Rennecke, and V. S, Phys.Rev.D 107 (2023) 11,
@@ -291,9 +252,9 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 
 ### Conclusions
 
-- Every second order phase transition comes with Yang-Lee edge singularity. In the "crossover" region, there is a singularity in the complex plane
+- Second order phase transition comes with Yang-Lee edge singularity. In the "crossover" region, there is a singularity in the complex plane
 - Universal location of YLE was one of not many unknown universal quantities
-  - FRG is uniquely positioned to determine the universal location of YLE with precision. In our work, $d>2.7$ and arbitrary $N$
+  - With FRG, we succeeded  to compute the location of YLE for $d>2.7$ and arbitrary $N$ 
   - Xu and Zamolodchikov determined location of YLE in Ising Field Theory, $d=2$
     and $N=1$
 - To map universal location to QCD, one requires non-universal metric factors.
@@ -301,6 +262,3 @@ c.f. F. Karsch, C. Schmidt, and S. Singh Phys.Rev.D 109 (2024) 1, 014508
 - Nevertheless properties of YLE singularities might be useful in establishing
   existence/location of QCD critical point
   - YLE is continuously connected to critical point 
-  - Two distinct approaches based on lattice input from Taylor coefficients and imaginary $\mu$ $\leadsto$ approximately the same $T_c$ 
-  - Associated analytic structure of complex $\mu$-plane constraints the
-    behaviour of Fourier coefficients
