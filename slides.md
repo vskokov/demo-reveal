@@ -113,7 +113,7 @@ ${ \color{red}{\frac{t}{ h^{2/3}}} } {\color{Emerald}f_G}  + {\color{Emerald}f_G
 
 ### Yang-Lee edge singularity
 
-<img src="img/fg3d.png" width="75%">
+<img src="img/fg3d.png" width="65%">
 
 
 
